@@ -1,13 +1,11 @@
 package com.example.ecomercebackend.bean;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.sql.Date;
 
 @Entity
+
 public class Administrateur {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

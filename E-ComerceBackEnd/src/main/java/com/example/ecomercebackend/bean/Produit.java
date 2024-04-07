@@ -1,9 +1,7 @@
 package com.example.ecomercebackend.bean;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
+
 
 @Entity
 public class Produit {
@@ -14,12 +12,13 @@ public class Produit {
     private String description;
     private double prix;
     private String image;
+    private int qteProduit;
+
+    private boolean validation;
     @ManyToOne
     private Categorie categorie;
     @ManyToOne
-    private Stock stock;
-    @ManyToOne
-    private Panier panier;
+    private Utilisateur utilisateur;
 
     public Long getReference() {
         return reference;
@@ -69,19 +68,21 @@ public class Produit {
         this.categorie = categorie;
     }
 
-    public Stock getStock() {
-        return stock;
+
+    public int getQteProduit() {
+        return qteProduit;
     }
 
-    public void setStock(Stock stock) {
-        this.stock = stock;
+    public void setQteProduit(int qteProduit) {
+        this.qteProduit = qteProduit;
     }
 
-    public Panier getPanier() {
-        return panier;
+    public boolean isValidation() {
+        return validation;
     }
 
-    public void setPanier(Panier panier) {
-        this.panier = panier;
+    public void setValidation(boolean validation) {
+        this.validation = validation;
     }
+
 }
