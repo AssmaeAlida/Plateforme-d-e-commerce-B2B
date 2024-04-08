@@ -1,12 +1,11 @@
-import { useState } from 'react'
 import './index.css'
-import Register from './Components/Register/Register'
+import ForgetPassword from './Components/ForgetPassword/ForgetPassword'
 function App() {
 
   return (
     <>
     <div className='body'>
-    <Register/>
+    <ForgetPassword/>
 
     </div>
 
