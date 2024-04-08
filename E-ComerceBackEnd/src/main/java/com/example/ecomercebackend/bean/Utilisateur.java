@@ -12,11 +12,14 @@ public class Utilisateur {
     private Long id;
     private String nonStore;
     private Date dateInscription;
+    @Column(unique = true)
     private String email;
     private String password;
     private String role;
     private String nomComplet;
     private String infoCarteBancaire;
+    private String token;
+
 
     @OneToMany
     private List<Produit> produits;
@@ -91,5 +94,13 @@ public class Utilisateur {
 
     public void setProduits(List<Produit> produits) {
         this.produits = produits;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 }
