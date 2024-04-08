@@ -6,12 +6,12 @@ export default function Register(){
    
         
         return (
-            <div style={{ display: 'flex', width: '100%', height: '100%' }}>
-              <div style={{ flex: '40%' }}>
+            <div className="flex">
+              <div className="demiorange" >
                 
-                <Demi_orange/>
+                <Demi_orange title={"Login"}  grandtitle={"Welcome to Your Store!"} smalltitle="We're glad to have you join us !"/>
               </div>
-              <div style={{ flex: '60%'}}>
+              <div className="registerform">
                 {/* Content of the second component */}
                 <RegisterForm/>
               </div>
