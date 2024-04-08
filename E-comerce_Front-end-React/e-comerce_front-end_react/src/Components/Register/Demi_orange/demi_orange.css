@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+.Demi_orange {
+    border-radius: 40px 0px 0px 40px;
+    background: #FF5722;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+ .welcome h3 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    margin: 0;
+    padding-top: 187px;
+    font-family: Inter;
+    font-style: normal;
+    padding-left: 53px;
+    padding-right: 20px;
+    font-size: 5vw; 
+    width: 85%;
+    font-size: 87.954px;
+font-style: normal;
+font-weight: 00;
+line-height: normal;
+ /* La taille du texte est égale à 3% de la largeur de la fenêtre d'affichage */
+
+
+}
+
+.welcome p{
+    padding-left: 73px;
+    color: #FFF;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 116.8%; 
+/* La taille du texte est égale à 3% de la largeur de la fenêtre d'affichage */
+
+}
