@@ -1,11 +1,11 @@
 import './index.css'
-import ForgetPassword from './Components/ForgetPassword/ForgetPassword'
+import RetrievePassword from './Components/RetrievePassword/RetrievePassword'
 function App() {
 
   return (
     <>
     <div className='body'>
-    <ForgetPassword/>
+    <RetrievePassword/>
 
     </div>
 
