@@ -9,7 +9,7 @@ export default function Register(){
             <div className="flex">
               <div className="demiorange" >
                 
-                <Demi_orange title={"Login"}  grandtitle={"Welcome to Your Store!"} smalltitle="We're glad to have you join us !"/>
+                <Demi_orange   grandtitle={"Welcome to Your Store!"} smalltitle="We're glad to have you join us !"/>
               </div>
               <div className="registerform">
                 {/* Content of the second component */}
