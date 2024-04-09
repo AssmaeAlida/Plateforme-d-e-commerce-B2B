@@ -4,13 +4,14 @@ import RegisterTitle from "./RegisterTitle/RegisterTitle";
 import Textfield from "./Textfield/Textfield";
 import SignUp from "./SignUp/SignUp";
 import axios from 'axios';
+import { useNavigate } from "react-router-dom";
 
 export default function LoginForm() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
 
-    
+    const navigate = useNavigate();
     const handleLogin = async (event) => {
         event.preventDefault(); // Prevent form submission
     
@@ -18,6 +19,7 @@ export default function LoginForm() {
             const response = await axios.post(`http://localhost:8089/ecomerce-backend/Utilisateur/signIn/email/${email}/password/${password}`);
     
             if (response.data) {
+                navigate('/home');
                 console.log("User exists");
                 // User exists, you can proceed with further actions (e.g., redirect to another page)
             } else {

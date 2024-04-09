@@ -23,16 +23,11 @@ export default function RegisterForm() {
     function register(event) {
         event.preventDefault(); // Prevent form submission
 
-        if (password.length < 2) {
+        if (password.length < 5) {
             setErrorMessage("The number of characters must be greater than 5");
             setPasswordError(true);
             return; // Exit the function early
         }
-        if (!acceptTerms) {
-            setErrorMessage("Please accept the terms and conditions");
-            return; // Exit the function early
-        }
-
         if (password === confirmationPassword) {
             try {
                 const response = axios.post(`http://localhost:8089/ecomerce-backend/Utilisateur/signUp/email/${email}/password/${password}`)
@@ -47,6 +42,12 @@ export default function RegisterForm() {
         } else {
             setErrorMessage("Passwords do not match");
         }
+        if (!acceptTerms) {
+            setErrorMessage("Please accept the terms and conditions");
+            return; // Exit the function early
+        }
+
+        
     }
 
     // Clear error message and border color when password changes
