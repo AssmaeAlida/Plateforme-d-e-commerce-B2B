@@ -2,19 +2,24 @@ package com.example.ecomercebackend.service;
 
 import com.example.ecomercebackend.bean.Utilisateur;
 import com.example.ecomercebackend.dao.UtilisateurDao;
+import com.example.ecomercebackend.service.Mail.MailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
-
+import java.util.Random;
 import java.util.UUID;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.transaction.annotation.Transactional;
+
+import javax.mail.MessagingException;
 
 @Service
 
 public class UtilisateurService {
     @Autowired
     private UtilisateurDao utilisateurDao;
+    @Autowired
+    private MailService mailService;
 
     private BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
@@ -59,20 +64,27 @@ public class UtilisateurService {
     public Utilisateur forgotPassword(String email) {
         Utilisateur user = utilisateurDao.findByEmail(email);
         if (user != null) {
-            String token = UUID.randomUUID().toString();
+            // Generate a token with 8 numbers
+            Random random = new Random();
+            String token = String.format("%08d", random.nextInt(100000000));
             user.setToken(token);
             utilisateurDao.save(user);
 
-            // Send an email to the user with a link to reset their password
-            // This link should include the token
-            // The actual implementation of this will depend on your email service
+            // Send an email to the user with the token
+            try {
+                mailService.sendMail(email, "Password Reset", "Your reset token is: " + token);
+            } catch (MessagingException e) {
+                System.out.println("Error sending email: " + e.getMessage());
+            }
+
             return user;
         } else {
             return null;
         }
     }
 
-public Utilisateur resetPassword(String token, String newPassword) {
+
+    public Utilisateur resetPassword(String token, String newPassword) {
 
     Utilisateur user = utilisateurDao.findByToken(token);
     if (user != null) {
@@ -82,6 +94,7 @@ public Utilisateur resetPassword(String token, String newPassword) {
     }
     return null;
 }
+
 
 public Utilisateur updateUser(Long id, Utilisateur updatedUser) {
     Utilisateur existingUser = utilisateurDao.findById(id).orElse(null);
@@ -103,6 +116,8 @@ public Utilisateur updateUser(Long id, Utilisateur updatedUser) {
     utilisateurDao.save(existingUser);
     return existingUser;
 }
+
+
 
 
 }

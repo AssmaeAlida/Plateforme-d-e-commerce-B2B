@@ -47,4 +47,8 @@ public class UtilisateurWs {
     public Utilisateur resetPassword(@PathVariable String token,@PathVariable String newPassword) {
         return utilisateurService.resetPassword(token, newPassword);
     }
+
+
+
+
 }
