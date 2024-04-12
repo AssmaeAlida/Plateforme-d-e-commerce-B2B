@@ -5,8 +5,8 @@ function App() {
   return (
     <>
     <div className='body'>
-    <Home/>
-
+ 
+<Home></Home>
     </div>
 
    
