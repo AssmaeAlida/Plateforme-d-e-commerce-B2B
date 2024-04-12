@@ -29,6 +29,10 @@ export default function RegisterForm() {
             return; // Exit the function early
         }
         if (password === confirmationPassword) {
+            if (!acceptTerms) {
+                setErrorMessage("Please accept the terms and conditions");
+                return; // Exit the function early
+            }
             try {
                 const response = axios.post(`http://localhost:8089/ecomerce-backend/Utilisateur/signUp/email/${email}/password/${password}`)
                 navigate('/login');
@@ -42,10 +46,7 @@ export default function RegisterForm() {
         } else {
             setErrorMessage("Passwords do not match");
         }
-        if (!acceptTerms) {
-            setErrorMessage("Please accept the terms and conditions");
-            return; // Exit the function early
-        }
+        
 
         
     }
