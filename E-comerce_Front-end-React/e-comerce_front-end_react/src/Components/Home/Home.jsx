@@ -1,11 +1,11 @@
-import './index.css'
-import Home from './Components/Home/Home'
+import './Home.css'
+import NavBar from './NavBar/NavBar'
 function App() {
 
   return (
     <>
     <div className='body'>
-    <Home/>
+    <NavBar/>
 
     </div>
 
