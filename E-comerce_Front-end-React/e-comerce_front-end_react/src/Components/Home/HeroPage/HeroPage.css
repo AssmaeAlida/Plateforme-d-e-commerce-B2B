@@ -1,0 +1,55 @@
+.Title1{
+    margin-top: 143px;
+    margin-left: 94px;
+    color: #000;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116.8%; /* 42.048px */
+    letter-spacing: -0.36px;
+}
+.Title2{
+    color: #616161;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 116.8%; /* 18.688px */
+    margin-left: 97px;
+}
+.btn-SignIn{
+    margin-top: 19px;
+    margin-left: 101px;
+    border: #FF5722;
+    width: 154px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #FF5722;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.LinkCreateStore{
+    margin-left: 31px;
+    color: #FF5722;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.image1{
+    margin-left: 675px;
+    margin-top: -329px;
+    width: 630px;
+    height: 421px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: url(C:\ProjetEcomm\projet-dev-2324-g7-iir42324c7g6\E-comerce_Front-end-React\e-comerce_front-end_react\public\images\rectangle-8.png) lightgray 50% / cover no-repeat;
+}
