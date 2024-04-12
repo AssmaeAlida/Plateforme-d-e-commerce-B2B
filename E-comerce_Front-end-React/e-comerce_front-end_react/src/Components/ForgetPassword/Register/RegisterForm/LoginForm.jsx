@@ -57,7 +57,7 @@ export default function LoginForm() {
                             <label htmlFor="radio1">Remember Me</label>
                         </div>
                         <div style={{marginLeft: "340px", color: "red"}} className="forgetpasswd">
-                            <a>Forgot Password</a>
+                            <a href="/forgetpassword">Forgot Password</a>
                         </div>
                     </div>
                     <div>

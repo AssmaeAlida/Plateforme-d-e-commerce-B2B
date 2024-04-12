@@ -55,22 +55,22 @@ public class UtilisateurService {
 
 // ...
 
-@Transactional
-public Utilisateur forgotPassword(String email) {
-    Utilisateur user = utilisateurDao.findByEmail(email);
-    if (user != null) {
-        String token = UUID.randomUUID().toString();
-        user.setToken(token);
-        utilisateurDao.save(user);
+    @Transactional
+    public Utilisateur forgotPassword(String email) {
+        Utilisateur user = utilisateurDao.findByEmail(email);
+        if (user != null) {
+            String token = UUID.randomUUID().toString();
+            user.setToken(token);
+            utilisateurDao.save(user);
 
-        // Send an email to the user with a link to reset their password
-        // This link should include the token
-        // The actual implementation of this will depend on your email service
-        return user;
-    } else {
-        return null;
+            // Send an email to the user with a link to reset their password
+            // This link should include the token
+            // The actual implementation of this will depend on your email service
+            return user;
+        } else {
+            return null;
+        }
     }
-}
 
 public Utilisateur resetPassword(String token, String newPassword) {
 
