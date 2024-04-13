@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './RetrievePasswordForm.css'; // Assurez-vous d'importer votre fichier CSS de style
 import 'typeface-inter';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 export default function RetrievePasswordForm() {
     const [password, setPassword] = useState('');
@@ -8,9 +10,39 @@ export default function RetrievePasswordForm() {
     const [showPassword, setShowPassword] = useState(false);
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
-    const handleSignIN = () => {
-        // Logique de confirmation du formulaire de réinitialisation de mot de passe ici
-    };
+    const [errorMessage, setErrorMessage] = useState('');
+
+    const navigate = useNavigate();
+
+    async function handleSignIN(event) {
+        event.preventDefault();
+    
+        // Check if password length is greater than 5
+        if (password.length <= 5) {
+            setErrorMessage('Password should be more than 5 characters');
+            return;
+        }else setErrorMessage('');
+    
+        // Check if password and confirmation password match
+        if (password !== confirmPassword) {
+            setErrorMessage('Password and confirmation password do not match');
+            return;
+        }else setErrorMessage('');
+    
+        try {
+            const token = sessionStorage.getItem('token');
+            const response = await axios.post(`http://localhost:8089/ecomerce-backend/Utilisateur/changePassword/token/${token}/password/${password}`);
+            
+            if(response.data) {
+                console.log("ready to update password")
+                navigate('/login');
+            } else {
+                console.log("User does not exist");
+            }
+        } catch (error) {
+            setErrorMessage(error.response.data.message);
+        }
+    }
 
     return (
         <div style={{ width: 401, height: 201, left: 73, top: 187, position: 'absolute' }}>
@@ -50,6 +82,7 @@ export default function RetrievePasswordForm() {
                     </svg>
                 )}
             </button>
+            <div style={{ color: 'red' ,marginTop :'60%', marginLeft : '187%' , width :'600px'}}>{errorMessage}</div>
             <div style={{ left: 718.03, top: 439.25, position: 'absolute', color: 'black', fontSize: 14, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word', width: 205, marginTop: -223, marginLeft: 11 }}>Confirm the new password</div>
             <input
                 type={showConfirmPassword ? 'text' : 'password'}
@@ -77,7 +110,7 @@ export default function RetrievePasswordForm() {
                 )}
             </button>
             <div style={{ width: 610, height: 47, left: 727, top: 444, position: 'absolute' }}>
-                <button style={{ width: 623, height: 47, color: 'white', left: 0, top: 0, position: 'absolute', background: '#FF5722', borderRadius: 8, border: 'none', cursor: 'pointer', marginTop: -73, fontWeight: '700' }} onClick={handleSignIN}>Sign in</button>
+                <button onClick={handleSignIN} style={{ width: 623, height: 47, color: 'white', left: 0, top: 0, position: 'absolute', background: '#FF5722', borderRadius: 8, border: 'none', cursor: 'pointer', marginTop: -73, fontWeight: '700' }} onClick={handleSignIN}>Sign in</button>
             </div>
         </div>
     );

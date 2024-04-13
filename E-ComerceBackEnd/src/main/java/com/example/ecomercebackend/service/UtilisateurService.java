@@ -70,6 +70,8 @@ public class UtilisateurService {
             user.setToken(token);
             utilisateurDao.save(user);
 
+            // Store the token in the session
+
             // Send an email to the user with the token
             try {
                 mailService.sendMail(email, "Password Reset", "Your reset token is: " + token);
@@ -84,17 +86,30 @@ public class UtilisateurService {
     }
 
 
-    public Utilisateur resetPassword(String token, String newPassword) {
+
+
+
+    public Utilisateur resetPassword(String token) {
 
     Utilisateur user = utilisateurDao.findByToken(token);
+
+    if(user != null) {
+
+        return user;
+    }
+
+    return null;
+}
+public Utilisateur changePassword(String token, String newPassword) {
+    Utilisateur user = utilisateurDao.findByToken(token);
     if (user != null) {
-        user.setPassword(newPassword);
+        user.setPassword(passwordEncoder.encode(newPassword));
+        user.setToken(null);
         utilisateurDao.save(user);
         return user;
     }
     return null;
 }
-
 
 public Utilisateur updateUser(Long id, Utilisateur updatedUser) {
     Utilisateur existingUser = utilisateurDao.findById(id).orElse(null);
