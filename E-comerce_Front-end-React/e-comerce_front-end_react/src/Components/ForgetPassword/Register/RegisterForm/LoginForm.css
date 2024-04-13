@@ -7,6 +7,8 @@
     padding-left: 15%;
     align-items: center;
     text-align: center;
+    margin-top: 10px;
+    
 
 }
 .facebook{
@@ -15,3 +17,5 @@
 .back{
     margin-left: -50px;
 }
+.register_form{
+    }

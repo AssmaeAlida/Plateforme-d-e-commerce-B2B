@@ -6,8 +6,8 @@ export default function Register(){
    
         
         return (
-            <div className="flex">
-              <div className="demiorange" >
+            <div className="flex" >
+              <div className="demiorange" style={{height:970}}>
                 
                 <Demi_orange   grandtitle={"Welcome to Your Store!"} smalltitle="We're glad to have you join us !"/>
               </div>

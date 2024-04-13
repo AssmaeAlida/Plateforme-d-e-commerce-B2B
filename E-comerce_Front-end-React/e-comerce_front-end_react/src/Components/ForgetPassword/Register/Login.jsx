@@ -5,8 +5,8 @@ import LoginForm from "./RegisterForm/LoginForm";
 export default function Login(){
 return(
     <>
-<div className="flex">
-              <div className="demiorange" >
+<div className="flex" >
+              <div className="demiorange"  style={{height:970}} >
                 
                 <Demi_orange  grandtitle={"Welcome Back!"} smalltitle={"YourStore Hopes Your Are Doing Well!"}/>
               </div>
