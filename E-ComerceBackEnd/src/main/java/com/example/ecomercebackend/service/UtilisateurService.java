@@ -2,19 +2,24 @@ package com.example.ecomercebackend.service;
 
 import com.example.ecomercebackend.bean.Utilisateur;
 import com.example.ecomercebackend.dao.UtilisateurDao;
+import com.example.ecomercebackend.service.Mail.MailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
-
+import java.util.Random;
 import java.util.UUID;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.transaction.annotation.Transactional;
+
+import javax.mail.MessagingException;
 
 @Service
 
 public class UtilisateurService {
     @Autowired
     private UtilisateurDao utilisateurDao;
+    @Autowired
+    private MailService mailService;
 
     private BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
@@ -55,28 +60,51 @@ public class UtilisateurService {
 
 // ...
 
-@Transactional
-public Utilisateur forgotPassword(String email) {
-    Utilisateur user = utilisateurDao.findByEmail(email);
-    if (user != null) {
-        String token = UUID.randomUUID().toString();
-        user.setToken(token);
-        utilisateurDao.save(user);
+    @Transactional
+    public Utilisateur forgotPassword(String email) {
+        Utilisateur user = utilisateurDao.findByEmail(email);
+        if (user != null) {
+            // Generate a token with 8 numbers
+            Random random = new Random();
+            String token = String.format("%08d", random.nextInt(100000000));
+            user.setToken(token);
+            utilisateurDao.save(user);
 
-        // Send an email to the user with a link to reset their password
-        // This link should include the token
-        // The actual implementation of this will depend on your email service
-        return user;
-    } else {
-        return null;
+            // Store the token in the session
+
+            // Send an email to the user with the token
+            try {
+                mailService.sendMail(email, "Password Reset", "Your reset token is: " + token);
+            } catch (MessagingException e) {
+                System.out.println("Error sending email: " + e.getMessage());
+            }
+
+            return user;
+        } else {
+            return null;
+        }
     }
-}
 
-public Utilisateur resetPassword(String token, String newPassword) {
+
+
+
+
+    public Utilisateur resetPassword(String token) {
 
     Utilisateur user = utilisateurDao.findByToken(token);
+
+    if(user != null) {
+
+        return user;
+    }
+
+    return null;
+}
+public Utilisateur changePassword(String token, String newPassword) {
+    Utilisateur user = utilisateurDao.findByToken(token);
     if (user != null) {
-        user.setPassword(newPassword);
+        user.setPassword(passwordEncoder.encode(newPassword));
+        user.setToken(null);
         utilisateurDao.save(user);
         return user;
     }
@@ -103,6 +131,8 @@ public Utilisateur updateUser(Long id, Utilisateur updatedUser) {
     utilisateurDao.save(existingUser);
     return existingUser;
 }
+
+
 
 
 }

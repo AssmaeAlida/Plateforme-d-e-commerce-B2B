@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
+
 @RestController
 @RequestMapping("/ecomerce-backend/Utilisateur")
 public class UtilisateurWs {
@@ -35,16 +36,27 @@ public class UtilisateurWs {
 
     @PostMapping("/forgotPassword/email/{email}")
     @Transactional
-    public Utilisateur forgotPassword(@PathVariable String email) {
+    public Utilisateur forgotPassword(@PathVariable String email ) {
         return utilisateurService.forgotPassword(email);
     }
 
-
-
-
-    @PostMapping("/resetPassword/token/{token}/newPassword/{newPassword}")
-
-    public Utilisateur resetPassword(@PathVariable String token,@PathVariable String newPassword) {
-        return utilisateurService.resetPassword(token, newPassword);
+    @PostMapping("/changePassword/token/{token}/password/{password}")
+    @Transactional
+    public Utilisateur changePassword(@PathVariable String token,@PathVariable String password) {
+        return utilisateurService.changePassword(token,password);
     }
+
+
+
+
+    @PostMapping("/resetPassword/token/{token}")
+
+    public Utilisateur resetPassword(@PathVariable String token) {
+        return utilisateurService.resetPassword(token);
+    }
+
+
+
+
+
 }
