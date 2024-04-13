@@ -1,6 +1,6 @@
 import "./LoginAdmin.css"
 import PartPage from "./PartPage/PartPage"
-import TextField from './TextField/TextField'
+import TextField from './TextField/TextField1'
 import 'typeface-inter';
 
 export default function LoginAdmin(){

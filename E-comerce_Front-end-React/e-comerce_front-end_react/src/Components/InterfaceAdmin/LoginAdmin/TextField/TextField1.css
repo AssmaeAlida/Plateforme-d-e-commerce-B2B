@@ -1,14 +1,14 @@
-.inputext {
+.inputext1 {
     margin-top: 6px;
     position: relative;
 
 }
-.inputext svg{
+.inputext1 svg{
   position: absolute;
   padding-left : 12px;
   padding-top: 13px;
 }
-.vertical-line {
+.vertical-line1 {
   position:absolute;
   width: 2px; /* Adjust the width as needed */
   height: 15px; /* Sets the height of the line to the full height of the viewport */
@@ -17,7 +17,7 @@
   margin-top: 14px; 
   /* Adjust color as needed */
 }
-.inputext input{
+.inputext1 input{
     width: 425px;
 height: 47px;
 flex-shrink: 0;
@@ -28,13 +28,13 @@ border :#F5F5F5;
 padding-left: 50px;
 font-size : 16px
 }
-.inputext {
+.inputext1 {
   margin-top: 6px;
   position: relative;
 
 }
 
-  .title{
+  .title1{
     color: #000;
    font-family: "inter";
    font-size: 16px;
@@ -49,7 +49,7 @@ font-size : 16px
  .icon{
 
  }
- .textfield{
+ .textfield1{
   margin-left: 5%;
 
  }
