@@ -1,17 +1,21 @@
 import "./LoginAdmin.css"
 import PartPage from "./PartPage/PartPage"
-import TextField from './TextField/TextField'
+
+import TextField from './TextField/TextField1'
+
+
 import 'typeface-inter';
 
 export default function LoginAdmin(){
     return(
         <>
         <PartPage></PartPage>
-        <div className="SignIn-Form">
-            <h4 className="Title1">Login</h4>
+        <div className="SignIn-Form1">
+           
+            <h4 className="Title1">Admin Login</h4>
             <TextField icon={<Icon1 />}  title=" UserName" name="name"  text="Your name here..." type="name" />
             <TextField icon={<Icon2 />}  title="Email Address" name="email"  text="Your email here..." type="email" />
-            <button className="btn-SignIn">Sign In</button>
+            <button className="btn-SignIn1">Sign In</button>
         </div>
         </>
     );
