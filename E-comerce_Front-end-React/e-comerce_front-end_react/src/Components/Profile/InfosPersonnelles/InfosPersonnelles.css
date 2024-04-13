@@ -1,0 +1,36 @@
+.InfoPerso{
+    margin-top: 45px;
+    margin-left: 123px;
+    width: 505px;
+    height: 757px;
+    flex-shrink: 0;
+    border-radius: 6px;
+        background: var(--White, #FFF);
+
+        /* Shadow 2 */
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.12);
+}
+.titre2{
+    margin-left: 45px;
+    padding-top: 1px;
+    color: var(--TailGrids-Black-Color, #212B36);
+    font-family: "Segoe UI";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 125% */
+}
+.titre3{
+    margin-left: 46px;
+    margin-top: -26px;
+    color: var(--TailGrids-Text-Color, #637381);
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+.info-form{
+    margin-top: -14px;
+    margin-left: 28px;
+}
