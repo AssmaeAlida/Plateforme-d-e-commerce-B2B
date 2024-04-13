@@ -1,0 +1,14 @@
+.icon-camera{
+    fill: var(--White, #FFF);
+    stroke-width: 1px;
+    stroke: var(--Stroke, #E7E7E7);
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-left: 43px;
+    margin-top: -15px;
+}
+.img-profile{
+    margin-left: 203px;
+    margin-top: 77px;
+}

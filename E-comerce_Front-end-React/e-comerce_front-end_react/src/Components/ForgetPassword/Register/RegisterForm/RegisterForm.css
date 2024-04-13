@@ -47,7 +47,10 @@ line-height: normal;
     border-radius: 4px;
 background: #FFCCBC; /* Change color when checked */
   }
-  
+  .error-message{
+    color: red;
+    margin-bottom: 10px;
+  }
   .checkbox label:after {
     content: "";
     position: absolute;
