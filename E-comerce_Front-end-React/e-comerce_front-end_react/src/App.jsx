@@ -7,6 +7,7 @@ import RetrievePassword from './Components/RetrievePassword/RetrievePassword'
 import InsertCode from './Components/ForgetPassword/InsertCode'
 import {BrowserRouter , Routes , Route } from 'react-router-dom'
 import LoginAdmin from './Components/InterfaceAdmin/LoginAdmin/LoginAdmin'
+import React from 'react'
 function App() {
 
   return (
@@ -21,7 +22,7 @@ function App() {
         <Route path ="/recievePassword" element={<RetrievePassword/>}></Route>
         <Route path='/insertCode' element={<InsertCode/>}></Route>
         <Route path='/loginAdmin' element={<LoginAdmin/>}></Route>
-
+        
         
 
       </Routes>
