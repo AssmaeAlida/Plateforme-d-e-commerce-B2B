@@ -1,0 +1,68 @@
+.footer {
+    margin-left: 44px;
+    margin-top: 66px;
+    display: flex;
+    padding: 9px;
+    width: 1372px;
+    height: 390px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    border: 1px solid #D9D9D9;
+    background: #F5F5F5;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.footer-section h2{
+    margin-top: 46px;
+    color: #FF5722;
+    font-family: Inter;
+    font-size: 40.764px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.footer-section p{
+    margin-top: -13px;
+    color: #616161;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 116.8%; /* 18.688px */
+
+
+}
+.footer-section h3{
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116.8%; /* 23.36px */
+    margin-top: 51px;
+
+
+}
+.footer-section li{
+    color: #616161;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 225.8%; /* 18.688px */
+    text-decoration-line: underline;
+    list-style-type: none;
+    margin-left: -36px;
+
+
+}
+.copyright{
+    margin-left: 317px;
+    margin-top: -53px;
+    color: #A0A0A0;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 116.8%; /* 18.688px */
+}
