@@ -2,6 +2,7 @@
     
     background-color: #FF5722;
     color: #FFF;
+    
 
 font-family: Inter;
 font-size: 4.5vw;
@@ -20,4 +21,9 @@ width: 90%;
     font-size: 1.3vw;
     padding-left: 12%;
 
+}
+.Demi_orange a{
+    color: #FFF;
+    padding-left: 12%;
+    
 }

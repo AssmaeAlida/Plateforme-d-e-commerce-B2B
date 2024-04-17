@@ -56,7 +56,7 @@ export default function LoginForm() {
                             <input type="checkbox" id="radio1" name="radios" />
                             <label htmlFor="radio1">Remember Me</label>
                         </div>
-                        <div style={{marginLeft: "340px", color: "red"}} className="forgetpasswd">
+                        <div style={{marginLeft: "43%", color: "red"}} className="forgetpasswd">
                             <a href="/forgetpassword">Forgot Password</a>
                         </div>
                     </div>
@@ -65,7 +65,7 @@ export default function LoginForm() {
                         <br />
                     </div>
                 </form>
-                <div>
+                <div style={{alignContent: 'center'}} >
                     <h2 className="divider line one-line">Or</h2>
                 </div>
                 <div className="socialmedia flex">

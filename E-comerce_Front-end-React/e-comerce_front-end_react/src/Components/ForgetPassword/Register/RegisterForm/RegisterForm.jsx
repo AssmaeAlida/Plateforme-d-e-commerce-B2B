@@ -97,9 +97,7 @@ export default function RegisterForm() {
                 </div>
             </form>
 
-            <div>
-                <h2 className="divider line one-line">Or</h2>
-            </div>
+            
 
             <div className="haveaccount">
                 <p>Already have an account <a   href="/login">Click Here</a></p>
