@@ -19,7 +19,8 @@ export default function InfosPersonnelles(){
             <TextField title=" UserName" name="name"  text="Your name here..." type="name" />
             <TextField title="Email Address" name="email"  text="Your email here..." type="email" />
             <ButtonEnregistrer/>           
-            </div>
+            </div> 
+            
             
 
         </div>

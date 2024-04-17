@@ -14,7 +14,6 @@ export default function Profile(){
           <Titre></Titre>
            <InfosPersonnelles></InfosPersonnelles>
            <InfoPassword></InfoPassword>
-
         </>
     );
 }
