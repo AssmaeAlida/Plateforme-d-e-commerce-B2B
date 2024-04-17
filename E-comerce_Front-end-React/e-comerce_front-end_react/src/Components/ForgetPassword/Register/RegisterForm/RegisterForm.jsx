@@ -34,7 +34,7 @@ export default function RegisterForm() {
                 return; // Exit the function early
             }
             try {
-                 const response = axios.post(`http://localhost:8089/ecomerce-backend/Utilisateur/signUp/email/${email}/password/${password}`)
+                const response = axios.post(`http://localhost:8089/ecomerce-backend/Utilisateur/signUp/email/${email}/password/${password}`)
                 navigate('/login');
                 console.log(response)
                 
@@ -46,11 +46,7 @@ export default function RegisterForm() {
         } else {
             setErrorMessage("Passwords do not match");
         }
-<<<<<<< HEAD
-       
-=======
         
->>>>>>> 06b772a22b2a2808bb75a01eaa8318fc30773cea
 
         
     }

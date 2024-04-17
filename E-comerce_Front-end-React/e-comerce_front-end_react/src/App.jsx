@@ -19,18 +19,18 @@ function App() {
       <Routes>
         <Route path='/register' element={<Register/>}></Route>
         <Route path='/login' element={<Login/>}></Route>
-        <Route path='/home' element={<Home/>}></Route>
+        <Route path='/' element={<Home/>}></Route>
         <Route path='/forgetpassword' element={<ForgetPassword/>}></Route>
         <Route path ="/recievePassword" element={<RetrievePassword/>}></Route>
         <Route path='/insertCode' element={<InsertCode/>}></Route>
         <Route path='/loginAdmin' element={<LoginAdmin/>}></Route>
+
         
         
 
       </Routes>
       
       </BrowserRouter>
-      
       
       
     </div>
