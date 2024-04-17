@@ -1,11 +1,10 @@
 import 'typeface-inter';
 import './Titre.css'
-export default function Titre(){
+export default function Titre({Titre1,Titre2}){
     return (
     <div>
-        <div style={{color: 'black', fontSize: 36, fontFamily: 'Inter', fontWeight: '700', lineHeight: 42.05, wordWrap: 'break-word'}}>Categories</div>
-        <div style={{color: '#616161', fontSize: 16, fontFamily: 'Inter', fontWeight: '400', lineHeight: 18.69, wordWrap: 'break-word'}}>Here you can find all categories!</div>
-
+       <h1 className='Titre1'>{Titre1}</h1>
+       <h2 className='Titre2'>{Titre2}</h2>
    </div>
     );
 }

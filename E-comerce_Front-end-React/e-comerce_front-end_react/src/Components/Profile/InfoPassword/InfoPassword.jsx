@@ -16,7 +16,6 @@ export default function InfoPassword(){
             <ButtonEnregistrer/>
               
             </div>
-            
 
         </div>
     );

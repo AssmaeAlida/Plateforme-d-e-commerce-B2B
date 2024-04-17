@@ -1,3 +1,40 @@
+.SignIn-Form{
+    margin-left: 758px;
+
+}
+
+.Title1 {
+
+    width: 160.367px;
+    height: 78.2px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 9px;
+    padding-top: 56px;
+}
+.btn-SignIn{
+    margin-top: 70px;
+    width: 56.972px;
+    height: 21.85px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 472px;
+    height: 47.1px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    background: #FCA88D;
+    border: #FCA88D;
+}
 .SignIn-Form1{
     margin-left: 758px;
 

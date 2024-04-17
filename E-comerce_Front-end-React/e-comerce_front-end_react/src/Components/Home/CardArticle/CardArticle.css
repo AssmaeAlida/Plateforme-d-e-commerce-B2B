@@ -1,7 +1,7 @@
-.categories-container {
+.CardArticle-container {
     display: flex;
     align-items: center; /* Pour aligner les éléments verticalement au centre */
 }
-.FormCategories {
+.CardArticleForm {
     margin: 0;
 }

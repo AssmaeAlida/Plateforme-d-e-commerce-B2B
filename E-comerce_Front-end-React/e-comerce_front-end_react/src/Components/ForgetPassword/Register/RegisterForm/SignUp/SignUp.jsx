@@ -3,7 +3,7 @@ export default function SignUp({title}){
     return(
         <>
         <div className="container" >
-        <button type="submit" class="signup">{title}</button>
+        <button type="submit" className="signup">{title}</button>
 
 
         </div>
