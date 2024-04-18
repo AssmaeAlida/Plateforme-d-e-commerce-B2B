@@ -10,15 +10,18 @@ public class Utilisateur {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String nonStore;
+    private boolean isVendeur;
+    private String storeName;
     private Date dateInscription;
     @Column(unique = true)
     private String email;
     private String password;
-    private String role;
     private String nomComplet;
     private String infoCarteBancaire;
     private String token;
+    private String image;
+    private String telephone;
+    private String adresse;
 
 
     @OneToMany
@@ -32,14 +35,21 @@ public class Utilisateur {
         this.id = id;
     }
 
-    public String getNonStore() {
-        return nonStore;
+    public String getStoreName() {
+        return storeName;
     }
 
-    public void setNonStore(String nonStore) {
-        this.nonStore = nonStore;
+    public void setStoreName(String storeName) {
+        this.storeName = storeName;
     }
 
+    public boolean isVendeur() {
+        return isVendeur;
+    }
+
+    public void setVendeur(boolean vendeur) {
+        isVendeur = vendeur;
+    }
     public Date getDateInscription() {
         return dateInscription;
     }
@@ -80,14 +90,13 @@ public class Utilisateur {
         this.infoCarteBancaire = infoCarteBancaire;
     }
 
-    public String getRole() {
-        return role;
+    public String getAdresse() {
+        return adresse;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public void setAdresse(String adresse) {
+        this.adresse = adresse;
     }
-
     public List<Produit> getProduits() {
         return produits;
     }
@@ -102,5 +111,21 @@ public class Utilisateur {
 
     public void setToken(String token) {
         this.token = token;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getTelephone() {
+        return telephone;
+    }
+
+    public void setTelephone(String telephone) {
+        this.telephone = telephone;
     }
 }

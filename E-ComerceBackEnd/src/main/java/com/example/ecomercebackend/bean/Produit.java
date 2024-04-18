@@ -7,8 +7,8 @@ import jakarta.persistence.*;
 public class Produit {
     @Id
     @GeneratedValue(strategy = jakarta.persistence.GenerationType.AUTO)
-    private Long reference;
-    private String libelle;
+    private Long id;
+    private String titre;
     private String description;
     private double prix;
     private String image;
@@ -20,20 +20,28 @@ public class Produit {
     @ManyToOne
     private Utilisateur utilisateur;
 
-    public Long getReference() {
-        return reference;
+    public Long getId() {
+        return id;
     }
 
-    public void setReference(Long reference) {
-        this.reference = reference;
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    public String getLibelle() {
-        return libelle;
+    public String getTitre() {
+        return titre;
     }
 
-    public void setLibelle(String libelle) {
-        this.libelle = libelle;
+    public void setTitre(String titre) {
+        this.titre = titre;
+    }
+
+    public Utilisateur getUtilisateur() {
+        return utilisateur;
+    }
+
+    public void setUtilisateur(Utilisateur utilisateur) {
+        this.utilisateur = utilisateur;
     }
 
     public String getDescription() {

@@ -107,3 +107,17 @@ ZE-ComerceBackEnd/src/main/java/com/example/ecomercebackend/service/UtilisateurS
 SE-ComerceBackEnd/src/main/java/com/example/ecomercebackend/bean/Administrateur.java,9\2\92060dcbd5145063f7dcba0df83051c97b118125
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+à
+XE-ComerceBackEnd/src/main/java/com/example/ecomercebackend/service/Mail/MailService.java,d\d\ddb05d0c786ebb97906de682a5c2b2147aa69191
+Å
+QE-ComerceBackEnd/src/main/java/com/example/ecomercebackend/Config/CorsConfig.java,b\d\bd5b90c2d4dff7fc0d377a392267de7888b7967c
+Ö
+UE-ComerceBackEnd/src/main/java/com/example/ecomercebackend/dao/AdministarteurDao.java,f\f\ffac41b8320d8c2421423620d34ba3e79f1803a3
+]
+-E-comerce_Front-end-React/.vscode/launch.json,2\5\252b7ae911f429564d4fcf81ccfdcd75f9527102
+E
+.vscode/settings.json,8\9\89aa447020cdcb580cea0495694d46a55941edbe
+U
+%E-comerce_Front-end-React/desktop.ini,5\4\54890d1bb910216a0afbe8209a1f3035a3654af6
+≤
+ÅE-comerce_Front-end-React/e-comerce_front-end_react/src/Components/RetrievePassword/RetrievePasswordForm/RetrievePasswordForm.jsx,b\b\bb63dde750ea0ffda53f61a16af6c9296227dc9b
