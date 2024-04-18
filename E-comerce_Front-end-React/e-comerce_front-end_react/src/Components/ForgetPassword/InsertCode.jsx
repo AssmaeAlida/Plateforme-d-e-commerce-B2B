@@ -7,7 +7,7 @@ export default function RegisterForm(){
         <div className="register_form flex"  >
         <PartOrange/>
         <InsertCodeForm/>
-*        
+       
 
 
         </div>
