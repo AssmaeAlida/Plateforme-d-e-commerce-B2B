@@ -1,22 +1,21 @@
 import 'typeface-inter';
 import './Newsletter.css';
+import Titre from '../Categories/Titre/Titre';
 
-export default function Pagination() {
+export default function Newsletter() {
   return (
-    <div style={{ width: 1372, height: 314, left: 34, top: 2597, position: 'absolute' }}>
-      <div style={{ width: 1372, height: 314, left: 0, top: 0, position: 'absolute', background: '#F5F5F5', borderRadius: 40, border: '1px #D9D9D9 solid' }} />
-      <div style={{ width: 529, height: 237, left: 422, top: 39, position: 'absolute' }}>
-        <div style={{ width: 529, height: 54, left: 0, top: 183, position: 'absolute' }}>
-          <div style={{ width: 529, height: 54, left: 0, top: 0, position: 'absolute', background: '#FF5722', borderRadius: 40 }} />
-          <div style={{ left: 222, top: 18, position: 'absolute', color: 'white', fontSize: 16, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word' }}>Subscribe!</div>
-        </div>
-        <div style={{ left: 0, top: 58, position: 'absolute', color: '#616161', fontSize: 16, fontFamily: 'Inter', fontWeight: '400', lineHeight: 18.69, wordWrap: 'break-word' }}>Please subscribe at our Newsletter to get info with every new arrivals!</div>
-        <div style={{ left: 78, top: 0, position: 'absolute', color: 'black', fontSize: 36, fontFamily: 'Inter', fontWeight: '700', lineHeight: 42.05, wordWrap: 'break-word' }}>YourStore Newsletter</div>
-        <div style={{ width: 529, height: 54, left: 0, top: 113, position: 'absolute' }}>
-          <input type="email" placeholder="Email adress..." style={{ width: '100%', height: '100%', borderRadius: 40, border: '1px #C1C1C1 solid', padding: '0 20px', boxSizing: 'border-box' }} />
-          <button style={{ width: 20, height: 20, left: 486, top: 17, position: 'absolute', background: '#878787', border: 'none', borderRadius: '50%', cursor: 'pointer' }}></button>
-        </div>
+    <div  className='Newsletter-container'>
+    <h1 className='titre-Newsletter'>YourStore Newsletter</h1>
+    <h4 className='Soustitre-Newsletter'>Please subscribe at our Newsletter to get info with every new arrivals!</h4> 
+    <div>
+      <input className='inputEmail' placeholder='       Email adress...'></input>
+      <div className='icon-search'>
+      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+        <path d="M16.031 14.617L20.314 18.899L18.899 20.314L14.617 16.031C13.0237 17.3082 11.042 18.0029 9 18C4.032 18 0 13.968 0 9C0 4.032 4.032 0 9 0C13.968 0 18 4.032 18 9C18.0029 11.042 17.3082 13.0237 16.031 14.617ZM14.025 13.875C15.2941 12.5699 16.0029 10.8204 16 9C16 5.133 12.867 2 9 2C5.133 2 2 5.133 2 9C2 12.867 5.133 16 9 16C10.8204 16.0029 12.5699 15.2941 13.875 14.025L14.025 13.875Z" fill="#878787"/>
+      </svg>
       </div>
+   </div>
+     <button className='btn_subsribe'>Subscribe!</button>
     </div>
   );
 }

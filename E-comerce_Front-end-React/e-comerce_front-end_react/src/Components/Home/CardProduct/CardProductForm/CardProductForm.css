@@ -1,0 +1,71 @@
+.card-container1{
+    border-radius: 40px;
+border: 1px solid #D9D9D9;
+background: #F6F6F6;
+width: 400px;
+height: 380px;
+flex-shrink: 0;
+margin-top: 53px;
+margin-left: 47px;
+}
+.img-card{
+    margin-top: 22px;
+    margin-left: 26px;
+    width: 340px;
+    height: 167px;
+    flex-shrink: 0;
+    border-radius: 40px;
+     background:  lightgray 50% / cover no-repeat;
+}
+.product-title{
+    margin-left: 30px;
+    color: #000;
+font-family: Inter;
+font-size: 19px;
+font-style: normal;
+font-weight: 700;
+line-height: 116.8%; /* 22.192px */
+}
+.product-subtitle{
+    margin-left: 33px;
+    margin-top: -7px;
+    color: #737373;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 116.8%; /* 14.016px */ 
+}
+.icon-avis{
+    margin-top: 26px;
+    margin-left: 24px;
+    width: 140px;
+    height: 28px;
+    flex-shrink: 0;
+}
+.btn-Buy{
+    color: #FFF;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    margin-left: 32px;
+    margin-top: 17px;
+    width: 340px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #FF5722;
+    border: #FF5722;
+}
+.product-price{
+    margin-top: -59px;
+    margin-left: 282px;
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116.8%; /* 28.032px */
+}

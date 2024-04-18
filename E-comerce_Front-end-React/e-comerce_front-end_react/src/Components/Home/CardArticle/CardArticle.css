@@ -1,0 +1,7 @@
+.CardArticle-container {
+    display: flex;
+    align-items: center; /* Pour aligner les éléments verticalement au centre */
+}
+.CardArticleForm {
+    margin: 0;
+}

@@ -1,11 +1,11 @@
-import "./PartOrange.css"
+
 
 import 'typeface-inter';
 
 export default function PartOrange(){
     return(
   
-        <div style={{width: 1465,paddinLeft :"-0px", height: '100%', position: 'relative', background: 'white', boxShadow: '0px 22px 44px rgba(0, 0, 0, 0.15)'}}>
+        <div style={{width: 1325, height: '100%', position: 'relative', background: 'white', boxShadow: '0px 22px 44px rgba(0, 0, 0, 0.15)'}}>
           <div style={{ width: 625, height: 1080, left: 0, top: 0, position: 'absolute', background: '#FF5722', marginTop: -8, marginLeft: -8 }} />
             <div style={{width: 401, height: 201, left: 73, top: 187, position: 'absolute'}}>
             <div style={{left: 0, top: 0, position: 'absolute', color: 'white', fontSize: 87.95, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'}}>Welcome</div>

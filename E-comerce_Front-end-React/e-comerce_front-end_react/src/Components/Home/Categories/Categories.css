@@ -1,0 +1,7 @@
+.categories-container {
+    display: flex;
+    align-items: center; /* Pour aligner les éléments verticalement au centre */
+}
+.FormCategories {
+    margin: 0;
+}

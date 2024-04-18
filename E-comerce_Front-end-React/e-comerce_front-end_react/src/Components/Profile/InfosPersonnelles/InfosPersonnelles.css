@@ -1,14 +1,12 @@
-.InfoPerso{
+.InfoPerso {
     margin-top: 45px;
-    margin-left: 123px;
+    margin-left: 175px;
     width: 505px;
     height: 757px;
     flex-shrink: 0;
     border-radius: 6px;
-        background: var(--White, #FFF);
-
-        /* Shadow 2 */
-        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.12);
+    background: var(--White, #FFF);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.12);
 }
 .titre2{
     margin-left: 45px;

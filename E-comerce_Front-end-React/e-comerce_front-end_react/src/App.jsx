@@ -1,3 +1,4 @@
+
 import './index.css'
 import Register from './Components/ForgetPassword/Register/Register'
 import Home from './Components/Home/Home'
@@ -7,6 +8,8 @@ import RetrievePassword from './Components/RetrievePassword/RetrievePassword'
 import InsertCode from './Components/ForgetPassword/InsertCode'
 import {BrowserRouter , Routes , Route } from 'react-router-dom'
 import LoginAdmin from './Components/InterfaceAdmin/LoginAdmin/LoginAdmin'
+import React from 'react'
+import { useEffect } from 'react'
 function App() {
 
   return (
@@ -16,18 +19,18 @@ function App() {
       <Routes>
         <Route path='/register' element={<Register/>}></Route>
         <Route path='/login' element={<Login/>}></Route>
-        <Route path='/home' element={<Home/>}></Route>
+        <Route path='/' element={<Home/>}></Route>
         <Route path='/forgetpassword' element={<ForgetPassword/>}></Route>
         <Route path ="/recievePassword" element={<RetrievePassword/>}></Route>
         <Route path='/insertCode' element={<InsertCode/>}></Route>
         <Route path='/loginAdmin' element={<LoginAdmin/>}></Route>
 
         
+        
 
       </Routes>
       
       </BrowserRouter>
-      
       
       
     </div>

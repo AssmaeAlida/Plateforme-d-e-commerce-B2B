@@ -121,3 +121,5 @@ U
 %E-comerce_Front-end-React/desktop.ini,5\4\54890d1bb910216a0afbe8209a1f3035a3654af6
 ≤
 ÅE-comerce_Front-end-React/e-comerce_front-end_react/src/Components/RetrievePassword/RetrievePasswordForm/RetrievePasswordForm.jsx,b\b\bb63dde750ea0ffda53f61a16af6c9296227dc9b
+H
+E-ComerceBackEnd/pom.xml,7\9\79f783486fadf9803eca2f4177d6c626d9081c7b
