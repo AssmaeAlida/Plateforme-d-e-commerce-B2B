@@ -1,0 +1,141 @@
+.register_form{
+
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 130px;
+
+}
+.checkbox {
+    display: inline-block;
+    margin-bottom: 10px; /* Add margin bottom for spacing */
+  }
+  
+  .checkbox input[type="checkbox"] {
+    display: none; /* Hide default checkbox */
+  }
+  
+  .checkbox label {
+    position: relative;
+    display: inline-block;
+    padding-left: 25px; /* Adjust as needed */
+    cursor: pointer;
+    color: #878787;
+
+text-align: center;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+  
+  .checkbox label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px; /* Size of the checkbox */
+    height: 14px; /* Size of the checkbox */
+    border: 1px solid #999;
+    border-radius: 3px;
+    background-color: #ffffff;
+  }
+  
+  .checkbox input[type="checkbox"]:checked + label:before {
+    
+    border-radius: 4px;
+background: #FFCCBC; /* Change color when checked */
+  }
+  .error-message{
+    color: red;
+    margin-bottom: 10px;
+  }
+  .checkbox label:after {
+    content: "";
+    position: absolute;
+    left: 6px; /* Adjust as needed */
+    top: 40%;
+    transform: translateY(-50%) rotate(45deg); /* Rotates the checkmark */
+    width: 4px;
+    height: 8px;
+    border: solid #fff; /* Checkmark color */
+    border-width: 0 2px 2px 0; /* Adjust thickness and angle of checkmark */
+    display: none;
+  }
+  .checkbox input[type="checkbox"]:hover {
+    
+    border-radius: 4px;
+color: #3d3735; /* Change color when checked */
+  }
+  .checkbox input[type="checkbox"]:checked + label:after {
+    display: block; /* Show checkmark when checkbox is checked */
+  }
+  .divider {
+    display: flex;
+    
+    &:before,
+    &:after {
+      content: "";
+      flex: 1;
+
+    }
+  }
+  
+  .line {
+    align-items: center;
+    text-align: center;
+    margin: 1em -1em;
+    
+    &:before,
+    &:after {
+      height: 1px;
+      color: #878787;
+      margin-right: 20px;
+
+      margin-left: 20px;
+    }
+    width: 610px;
+    margin-right: 10px;
+    margin-top: 8px;
+    font-size: 20px;
+    color: #878787;
+
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+  
+  
+    .one-line {
+      &:before,
+      &:after {
+        background: black;
+      }
+    }
+.haveaccount{
+    color :  red;
+    padding-top : 3px;
+    margin-left: 20%;
+}
+.haveaccount p{
+    color: #878787;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+
+line-height: normal;
+}
+.haveaccount a{
+    color: #FF5722;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-decoration-line: underline;
+text-decoration: none;
+}

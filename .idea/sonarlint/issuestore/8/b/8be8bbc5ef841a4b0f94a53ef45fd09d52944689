@@ -1,0 +1,11 @@
+
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ú‰•ï1
+V	java:S125"<This block of commented-out lines of code should be removed.(’Ì—ıÿÿÿÿ
+`
+java:S1128"ERemove this unused import 'com.example.ecomercebackend.bean.Produit'.(¥¥Óüÿÿÿÿ
+e
+java:S1128"ORemove this unused import 'org.springframework.web.bind.annotation.GetMapping'.(‡¡‰Ø
+F
+java:S1128
+"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ

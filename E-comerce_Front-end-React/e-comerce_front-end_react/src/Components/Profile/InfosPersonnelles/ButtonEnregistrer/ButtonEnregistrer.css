@@ -1,0 +1,17 @@
+.btn-enregister{
+    margin-top: 55px;
+    display: flex;
+    width: 446px;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    background: #FF5722;
+    border: #FF5722;
+    color: var(--White, #FFF);
+    font-family: "inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}

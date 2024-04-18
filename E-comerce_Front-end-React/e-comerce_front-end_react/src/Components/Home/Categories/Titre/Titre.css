@@ -1,0 +1,21 @@
+.Titre1{
+    color: #000;
+font-family: Inter;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 116.8%; /* 42.048px */
+letter-spacing: -0.36px;
+margin-left: 100px;
+margin-top: 66px;
+}
+.Titre2 {
+    color: #616161;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 116.8%;
+    margin-left: 104px;
+    margin-top: -12px;
+}

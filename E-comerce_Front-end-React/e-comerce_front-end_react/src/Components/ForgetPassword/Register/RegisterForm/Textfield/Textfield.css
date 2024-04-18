@@ -1,0 +1,43 @@
+.inputext {
+    margin-top: 6px;
+    position: relative;
+
+}
+.inputext svg{
+    position: absolute;
+    padding-left : 12px;
+    padding-top: 13px;
+}
+.inputext input{
+    border-radius: 40px;
+border: 2px solid #C1C1C1;
+width: 70%;
+height: 40px;
+background: #FFF;
+padding: 5px , 10px , 5px, 30px;
+text-align:justify ;
+padding-left: 50px;
+font-size : 16px
+}
+.vertical-line {
+    position:absolute;
+    width: 2px; /* Adjust the width as needed */
+    height: 15px; /* Sets the height of the line to the full height of the viewport */
+    background-color: #878787;
+    margin-left: 40px;
+    margin-top: 14px; 
+    /* Adjust color as needed */
+  }
+  .title{
+    margin-left : 17px;
+    color: #878787;
+
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+  .textfield{
+    padding-bottom: 20px;
+  }
