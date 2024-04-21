@@ -6,20 +6,22 @@ import { useNavigate } from 'react-router-dom';
 export default function NavBarVend({src , alt}) {
 
     const navigate = useNavigate();
+
     function navigation1(event){
         event.preventDefault();
-        navigate("/Profile")
+        navigate("/Profile");
     }
+
     function navigation2(event){
         event.preventDefault();
-        navigate("/")
+        navigate("/MyStore"); // Naviguer vers la page My Store
     }
+
     const [showDropdown, setShowDropdown] = useState(false);
 
     const toggleDropdown = () => {
         setShowDropdown(!showDropdown);
     };
-   
     return (
         <div className="navbar-container">
             <Logo />
@@ -27,7 +29,7 @@ export default function NavBarVend({src , alt}) {
             <div className="navbar-links">
                 <div className="nav-link1">Home</div>
                 <div className="nav-link2">Products</div>
-                <div className="nav-link2">My store</div>
+                <div className="nav-link2" onClick={navigation2}>My Store</div> {/* Ajoutez onClick */}
                 <div className="nav-link3">About Us</div>
             </div>
 
