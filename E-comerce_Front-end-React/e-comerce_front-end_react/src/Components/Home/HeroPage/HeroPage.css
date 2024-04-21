@@ -51,5 +51,5 @@
     height: 421px;
     flex-shrink: 0;
     border-radius: 40px;
-    background: url(C:\ProjetEcomm\projet-dev-2324-g7-iir42324c7g6\E-comerce_Front-end-React\e-comerce_front-end_react\public\images\rectangle-8.png) lightgray 50% / cover no-repeat;
+    background: url("/public\images\rectangle-8.png") lightgray 50% / cover no-repeat;
 }
