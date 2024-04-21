@@ -10,5 +10,6 @@ import java.util.List;
 public interface CategorieDao extends JpaRepository<Categorie, Long> {
 
     List<Categorie> findAll();
+    Categorie findByLibelle(String nom);
 
 }

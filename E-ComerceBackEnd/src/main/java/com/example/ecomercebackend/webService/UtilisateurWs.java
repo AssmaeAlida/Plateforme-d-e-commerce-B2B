@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 
 @RestController
 @RequestMapping("/ecomerce-backend/Utilisateur")
@@ -14,7 +16,10 @@ public class UtilisateurWs {
     @Autowired
     private UtilisateurService utilisateurService;
 
-
+    @GetMapping("/findAll")
+    public List<Utilisateur> findAll() {
+        return utilisateurService.findAll();
+    }
 
     @PostMapping("/")
     public Utilisateur addUser(@RequestBody Utilisateur utilisateur) {

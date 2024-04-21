@@ -4,7 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a70af0bb-6305-4967-addc-5806126a975c" name="Changes" comment="com" />
+    <list default="true" id="a70af0bb-6305-4967-addc-5806126a975c" name="Changes" comment="com">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/bean/Administrateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/bean/Administrateur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/bean/Categorie.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/bean/Categorie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/dao/CategorieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/dao/CategorieDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/dao/ProduitDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/dao/ProduitDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/dao/UtilisateurDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/dao/UtilisateurDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/service/AdministarteurService.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/service/AdministarteurService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/service/CategorieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/service/CategorieService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/service/ProduitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/service/ProduitService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/service/UtilisateurService.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/service/UtilisateurService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/webService/AdministarteurWs.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/webService/AdministarteurWs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/webService/CategorieWs.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/webService/CategorieWs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/webService/ProduitWs.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/webService/ProduitWs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/webService/UtilisateurWs.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/webService/UtilisateurWs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/Config/CorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/Config/CorsConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/EComerceBackEndApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/EComerceBackEndApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/Administrateur.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/Administrateur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/Categorie.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/Categorie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/NotificationAV.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/NotificationAV.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/NotificationCV.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/NotificationCV.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/NotificationVA.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/NotificationVA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/dao/CategorieDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/dao/CategorieDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/service/CategorieService.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/service/CategorieService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/service/Mail/MailService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/service/Mail/MailService$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/service/Mail/MailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/service/Mail/MailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/webService/CategorieWs.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/webService/CategorieWs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/webService/ProduitWs.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/webService/ProduitWs.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +46,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -20,14 +59,37 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2fIF0VQg44hl75FIhKtVabWCfzz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.EComerceBackEndApplication.executor&quot;: &quot;Run&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="EComerceBackEndApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="E-ComerceBackEnd" />
@@ -37,8 +99,29 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-19.0.2-corretto-19.0.2-4caba194b151-48ba4555" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a70af0bb-6305-4967-addc-5806126a975c" name="Changes" comment="com" />
+      <created>1713480469292</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713480469292</updated>
+      <workItem from="1713480471439" duration="1208000" />
+      <workItem from="1713554509611" duration="607000" />
+      <workItem from="1713696540536" duration="21475000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="com" />

@@ -12,7 +12,15 @@ public class CategorieService {
     @Autowired
     private CategorieDao categorieDao;
 
-//    public List<Categorie> findAll() {
-//        return categorieDao.findAll();
-//    }
+    public List<Categorie> findAll() {
+        return categorieDao.findAll();
+    }
+
+
+
+
+
+
+
+
 }
