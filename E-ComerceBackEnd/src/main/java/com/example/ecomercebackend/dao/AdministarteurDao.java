@@ -10,4 +10,6 @@ import java.util.List;
 public interface AdministarteurDao extends JpaRepository<Administrateur, Long> {
 
     List<Administrateur> findAll();
+
+    Administrateur findByEmail(String email);
 }

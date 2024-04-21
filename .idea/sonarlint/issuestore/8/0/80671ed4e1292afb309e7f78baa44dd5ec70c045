@@ -1,0 +1,7 @@
+
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8®¼úÚî1J$ce356764-8e96-4820-90c9-2343785d0549
+
+java:S1128"URemove this unused import 'org.springframework.transaction.annotation.Transactional'.(ğùçøùÿÿÿÿ8£ßûÚî1J$09e61671-79ae-49c0-a1dc-d0fa696078ee
+s
+java:S1128	"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8³¼úÚî1J$4fa01ac8-e6d1-4b8c-afc5-5c5ff2039652
