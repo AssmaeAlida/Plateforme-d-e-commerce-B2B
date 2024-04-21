@@ -45,7 +45,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
-<<<<<<< HEAD
+
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-crypto</artifactId>
@@ -56,9 +56,7 @@
             <artifactId>hibernate-core</artifactId>
             <version>6.4.4.Final</version>
         </dependency>
-        =======
 
->>>>>>> 06b772a22b2a2808bb75a01eaa8318fc30773cea
     </dependencies>
 
     <build>
