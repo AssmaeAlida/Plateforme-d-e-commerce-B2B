@@ -1,22 +1,22 @@
-.inputext {
+.inputext2 {
     margin-top: 6px;
     position: relative;
 
 }
 
-.inputext input{
+.inputext2 input{
     width: 425px;
-height: 47px;
-flex-shrink: 0;
-border-radius: 18px;
-background: #F5F5F5;
-border :#F5F5F5;
+  height: 47px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  background: #F5F5F5;
+  border :#F5F5F5;
 
-padding-left: 22px;
-font-size : 16px
+  padding-left: 22px;
+  font-size : 16px
 }
 
-  .title{
+  .title10{
     color: #000;
    font-family: "inter";
    font-size: 16px;

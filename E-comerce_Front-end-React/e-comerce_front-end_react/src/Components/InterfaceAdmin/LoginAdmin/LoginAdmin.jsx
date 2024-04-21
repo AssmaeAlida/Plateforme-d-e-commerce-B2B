@@ -14,7 +14,7 @@ export default function LoginAdmin(){
            
             <h4 className="Title1">Admin Login</h4>
             <TextField icon={<Icon1 />}  title=" UserName" name="name"  text="Your name here..." type="name" />
-            <TextField icon={<Icon2 />}  title="Email Address" name="email"  text="Your email here..." type="email" />
+            <TextField icon={<Icon2 />}  title="Password" name="password"  text="Your password here..." type="password" />
             <button className="btn-SignIn1">Sign In</button>
         </div>
         </>

@@ -18,15 +18,16 @@
     line-height: 116.8%; /* 18.688px */
     margin-left: 97px;
 }
-.btn-SignIn12{
+
+.btn-CreateStore{
     margin-top: 19px;
     margin-left: 101px;
-    border: #FF5722;
-    width: 154px;
+    width: 238px;
     height: 54px;
     flex-shrink: 0;
     border-radius: 40px;
     background: #FF5722;
+    border:#FF5722;
     color: #FFF;
     font-family: Inter;
     font-size: 16px;
@@ -34,23 +35,24 @@
     font-weight: 700;
     line-height: normal;
 }
-.LinkCreateStore{
-    margin-left: 31px;
-    color: #FF5722;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-decoration-line: underline;
-}
-.image1{
+
+.image12{
     margin-left: 675px;
     margin-top: -329px;
     width: 630px;
     height: 421px;
     flex-shrink: 0;
     border-radius: 40px;
-    background: url("/public\images\rectangle-8.png") lightgray 50% / cover no-repeat;
+    background: url("/public\images\rectangle-Store.png") lightgray 50% / cover no-repeat;
 }
-
+.Title13 {
+    margin-top: -68px;
+    color: #FF5722;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116.8%;
+    letter-spacing: -0.36px;
+    margin-left: 186px;
+}

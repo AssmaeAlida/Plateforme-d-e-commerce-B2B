@@ -7,8 +7,8 @@ export default function Textfield({ title, icon,type, text , onChange }) {
       <div className="title">
         <label>{title}</label>
       </div>
-      <div className="inputext">
-        {icon}
+      <div className="inputext3">
+         <div className="iconnns"> {icon}</div>
         <div className="vertical-line"></div>
         <input type={type} placeholder={text}  onChange={onChange}/> {/* Trim whitespace */}
       </div>

@@ -18,9 +18,7 @@ export default function HeroPage(){
      <button onClick={navigation1} className='btn-SignIn12'>Sign In</button>
      <a className='LinkCreateStore'>Create YourOwn Store!</a>
     </div>
-    <div className='image1'>
-
-    </div>
+    <div className='image1'></div>
 </div>
 
     );
