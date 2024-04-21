@@ -1,7 +1,9 @@
 package com.example.ecomercebackend.service;
 
 import com.example.ecomercebackend.bean.Administrateur;
+import com.example.ecomercebackend.bean.Categorie;
 import com.example.ecomercebackend.dao.AdministarteurDao;
+import com.example.ecomercebackend.dao.CategorieDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -14,6 +16,8 @@ public class AdministarteurService {
 
    @Autowired
     AdministarteurDao administarteurDao;
+   @Autowired
+    CategorieDao categorieDao;
 
     private BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
     @Transactional
@@ -42,7 +46,23 @@ public class AdministarteurService {
 
 
 
+    public Categorie addCategorie(String libelle, String description) {
+        Categorie categorie = new Categorie();
+        categorie.setLibelle(libelle);
+        categorie.setDescription(description);
+        return categorieDao.save(categorie);
+    }
 
+public Administrateur addAdministrateur(Administrateur administrateur) {
+    Administrateur existingAdmin = administarteurDao.findByEmail(administrateur.getEmail());
+    if (existingAdmin != null) {
+        throw new RuntimeException("Administrator with email " + administrateur.getEmail() + " already exists");
+    }
+    administrateur.setPassword(passwordEncoder.encode(administrateur.getPassword())); // Hash the password before storing
+    return administarteurDao.save(administrateur);
+}
 
-
+    public List<Administrateur> findAll() {
+        return administarteurDao.findAll();
+    }
 }
