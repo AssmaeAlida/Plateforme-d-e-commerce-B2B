@@ -96,7 +96,7 @@ const Stepper = () => {
             ) {
               if (currentStep === steps.length) {
                 setComplete(true);
-                navigate('/');
+                navigate('/homeVend');
                  // Add this line
               } else {
                 setCurrentStep((prev) => prev + 1);

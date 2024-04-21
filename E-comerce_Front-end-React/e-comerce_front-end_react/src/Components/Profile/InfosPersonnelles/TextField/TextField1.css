@@ -1,0 +1,31 @@
+.inputext2 {
+    margin-top: 6px;
+    position: relative;
+
+}
+
+.inputext2 input{
+    width: 425px;
+  height: 47px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  background: #F5F5F5;
+  border :#F5F5F5;
+
+  padding-left: 22px;
+  font-size : 16px
+}
+
+  .title10{
+    color: #000;
+   font-family: "inter";
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   margin-left: 22px;
+   margin-top: 51px;
+    
+
+  }
+ 
