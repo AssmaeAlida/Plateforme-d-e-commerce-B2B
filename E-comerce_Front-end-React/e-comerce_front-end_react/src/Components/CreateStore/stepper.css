@@ -1,0 +1,60 @@
+.step-item {
+  margin-right: 20px;
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 16rem; /* w-36 */
+}
+
+.step-item:not(:first-child)::before {
+  content: '';
+  background-color: #cbd5e0; /* bg-slate-200 */
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  right: 50%;
+  top: 24.33%;
+  transform: translateY(-50%);
+}
+
+.step {
+  width: 2.5rem; /* w-10 */
+  height: 2.5rem; /* h-10 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  background-color: #6d4c34; /* bg-orange-700 */
+  border-radius: 50%; /* rounded-full */
+  font-weight: 600; /* font-semibold */
+  font-family: 'Inter', sans-serif;
+  color: #ffffff; /* text-white */
+  transition: transform 0.7s ease;
+}
+
+.active .step {
+  background-color: #FF5722;
+}
+
+.complete .step {
+  background-color: #256116;
+  transform: scale(1.2);
+}
+
+.complete p {
+  color: #256116;
+  box-shadow: inset , 0 3px 3px 2px #256116;
+}
+
+.complete:not(:first-child)::before,
+.active:not(:first-child)::before {
+  background-color: #256116;
+}
+
+.step p {
+  /* Add your styles here */
+}
