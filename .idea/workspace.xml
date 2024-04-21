@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85cca5af-6f4d-42db-921d-8fba938416a5" name="Changes" comment="authentication of Admin and addStock">
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="85cca5af-6f4d-42db-921d-8fba938416a5" name="Changes" comment="commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713457622113</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="commit">
+      <option name="closed" value="true" />
+      <created>1713726049749</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713726049749</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,8 +241,9 @@
     <MESSAGE value="a commit of some edits and the frond part" />
     <MESSAGE value="the frond part" />
     <MESSAGE value="signIn signUp and reset/forgotPassword" />
-    <MESSAGE value="commit" />
     <MESSAGE value="authentication of Admin and addStock" />
-    <option name="LAST_COMMIT_MESSAGE" value="authentication of Admin and addStock" />
+    <MESSAGE value=" Sprint 1 DoooooNE" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
 </project>
