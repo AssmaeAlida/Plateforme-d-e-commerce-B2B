@@ -55,8 +55,14 @@ public class UtilisateurWs {
         return utilisateurService.resetPassword(token);
     }
 
+    @PostMapping("/updateUser")
+    public Utilisateur updateUser(@RequestBody Utilisateur updatedUser) {
+        return utilisateurService.updateUser(updatedUser);
+    }
 
-
-
-
+    @PostMapping("/addStock")
+    public Utilisateur addStock(@RequestBody Utilisateur utilisateur) {
+        return utilisateurService.addStock(utilisateur);
+    }
 }
+

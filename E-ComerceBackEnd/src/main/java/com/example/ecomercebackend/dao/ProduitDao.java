@@ -9,8 +9,9 @@ import java.util.List;
 @Repository
 public interface ProduitDao extends JpaRepository<Produit, Long> {
 
-Produit findByReference(Long reference);
-List<Produit> findAll();
+//Produit findByReference(Long reference);
+//List<Produit> findAll();
+//Produit findByTitre(String titre);
 
 
 }

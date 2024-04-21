@@ -12,11 +12,29 @@ public class ProduitService {
     @Autowired
     private ProduitDao produitDao;
 
-//    public Produit findByReference(Long reference) {
-//        return produitDao.findByReference(reference);
+
+//    public Produit addProduct(Produit produit) {
+//        Produit existingProduct = produitDao.findByTitre(produit.getTitre());
+//        if (existingProduct != null) {
+//            throw new RuntimeException("Product title is already in use");
+//        }
+//        produitDao.save(produit);
+//        return produit;
 //    }
-//
-//    public List<Produit> findAll() {
-//        return produitDao.findAll();
+
+
+//    public Produit updateProduct(Produit updatedProduct) {
+//        Produit existingProduct = produitDao.findByTitre(updatedProduct.getTitre());
+//        if (existingProduct != null) {
+//            existingProduct.setTitre(updatedProduct.getTitre());
+//            existingProduct.setImage(updatedProduct.getImage());
+//            existingProduct.setPrix(updatedProduct.getPrix());
+//            existingProduct.setDescription(updatedProduct.getDescription());
+//            existingProduct.setQteProduit(updatedProduct.getQteProduit());
+//            produitDao.save(existingProduct);
+//            return existingProduct;
+//        }
+//        return null;
 //    }
 }
+

@@ -4,10 +4,8 @@ import com.example.ecomercebackend.bean.Utilisateur;
 import com.example.ecomercebackend.dao.UtilisateurDao;
 import com.example.ecomercebackend.service.Mail.MailService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 import java.util.Random;
-import java.util.UUID;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -111,28 +109,39 @@ public Utilisateur changePassword(String token, String newPassword) {
     return null;
 }
 
-public Utilisateur updateUser(Long id, Utilisateur updatedUser) {
-    Utilisateur existingUser = utilisateurDao.findById(id).orElse(null);
-    if (existingUser == null) {
-        return null; // User does not exist
+public Utilisateur updateUser(Utilisateur updatedUser) {
+    Utilisateur existingUser = utilisateurDao.findByEmail(updatedUser.getEmail());
+    if (existingUser != null) {
+        existingUser.setStoreName(updatedUser.getStoreName());
+        existingUser.setEmail(updatedUser.getEmail());
+        existingUser.setPassword(passwordEncoder.encode(updatedUser.getPassword()));
+        existingUser.setNomComplet(updatedUser.getNomComplet());
+        existingUser.setInfoCarteBancaire(updatedUser.getInfoCarteBancaire());
+        existingUser.setImage(updatedUser.getImage());
+        existingUser.setTelephone(updatedUser.getTelephone());
+        utilisateurDao.save(existingUser);
+        return existingUser;
     }
-    Utilisateur userWithNewEmail = utilisateurDao.findByEmail(updatedUser.getEmail());
-    if (userWithNewEmail != null && !userWithNewEmail.getId().equals(id)) {
-        return null; // Email is already in use
-    }
-    existingUser.setNonStore(updatedUser.getNonStore());
-    existingUser.setDateInscription(updatedUser.getDateInscription());
-    existingUser.setEmail(updatedUser.getEmail());
-    existingUser.setPassword(passwordEncoder.encode(updatedUser.getPassword()));
-    existingUser.setNomComplet(updatedUser.getNomComplet());
-    existingUser.setInfoCarteBancaire(updatedUser.getInfoCarteBancaire());
-    existingUser.setProduits(updatedUser.getProduits());
+    return null;
+}
 
-    utilisateurDao.save(existingUser);
-    return existingUser;
+
+
+    public Utilisateur addStock( Utilisateur utilisateur) {
+    Utilisateur utilisateurAvecStock = utilisateurDao.findByEmail( utilisateur.getEmail());
+    if (utilisateurAvecStock != null ) {
+        utilisateurAvecStock.setStoreName(utilisateur.getStoreName());
+        utilisateurAvecStock.setTelephone(utilisateur.getTelephone());
+        utilisateurAvecStock.setAdresse(utilisateur.getAdresse());
+        utilisateurAvecStock.setVendeur(true);
+        utilisateurDao.save(utilisateurAvecStock);
+        return utilisateurAvecStock;
+    }
+    return null;
+}
 }
 
 
 
 
-}
+
