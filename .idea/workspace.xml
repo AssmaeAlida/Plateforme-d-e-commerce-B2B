@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85cca5af-6f4d-42db-921d-8fba938416a5" name="Changes" comment="commit" />
+    <list default="true" id="85cca5af-6f4d-42db-921d-8fba938416a5" name="Changes" comment=" Sprint 1 DoooooNE">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6a95e70b2c9e0c1c8e8e98c580070f8d35ae1971" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6a95e70b2c9e0c1c8e8e98c580070f8d35ae1971" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -242,8 +244,8 @@
     <MESSAGE value="the frond part" />
     <MESSAGE value="signIn signUp and reset/forgotPassword" />
     <MESSAGE value="authentication of Admin and addStock" />
-    <MESSAGE value=" Sprint 1 DoooooNE" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value=" Sprint 1 DoooooNE" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Sprint 1 DoooooNE" />
   </component>
 </project>
