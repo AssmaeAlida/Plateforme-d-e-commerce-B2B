@@ -3,18 +3,21 @@ package com.example.ecomercebackend.bean;
 import jakarta.persistence.*;
 
 import java.sql.Date;
+import java.util.List;
 
 @Entity
 
 public class Administrateur {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Long id;
     private String nom;
     private Date dateInscription;
     private String email;
     private String password;
+    @OneToMany
+    private List<Categorie> categories;
 
     public Long getId() {
         return id;
@@ -54,5 +57,13 @@ public class Administrateur {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public List<Categorie> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(List<Categorie> categories) {
+        this.categories = categories;
     }
 }

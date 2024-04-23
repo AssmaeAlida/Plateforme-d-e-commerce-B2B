@@ -5,6 +5,8 @@ import com.example.ecomercebackend.dao.UtilisateurDao;
 import com.example.ecomercebackend.service.Mail.MailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 import java.util.Random;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.transaction.annotation.Transactional;
@@ -21,10 +23,14 @@ public class UtilisateurService {
 
     private BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
+    public List<Utilisateur> findAll() {
+        return utilisateurDao.findAll();
+    }
 
     public Utilisateur addUser(Utilisateur utilisateur) {
         String hashedPassword = passwordEncoder.encode(utilisateur.getPassword());
         utilisateur.setPassword(hashedPassword);
+        utilisateur.setProduits(utilisateur.getProduits());
         Utilisateur existingUser = utilisateurDao.findByEmail(utilisateur.getEmail());
         if (existingUser != null) {
             throw new RuntimeException("Email is already in use");
@@ -119,6 +125,9 @@ public Utilisateur updateUser(Utilisateur updatedUser) {
         existingUser.setInfoCarteBancaire(updatedUser.getInfoCarteBancaire());
         existingUser.setImage(updatedUser.getImage());
         existingUser.setTelephone(updatedUser.getTelephone());
+        existingUser.setAdresse(updatedUser.getAdresse());
+        existingUser.setProduits(updatedUser.getProduits());
+        existingUser.setVendeur(updatedUser.isVendeur());
         utilisateurDao.save(existingUser);
         return existingUser;
     }

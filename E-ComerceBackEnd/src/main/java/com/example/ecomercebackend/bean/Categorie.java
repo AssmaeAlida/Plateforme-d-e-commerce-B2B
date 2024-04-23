@@ -14,6 +14,9 @@ public class Categorie {
     @OneToMany(mappedBy = "categorie")
     private List<Produit> produit;
 
+    @ManyToOne
+    private Administrateur administrateur;
+
     public Long getNumero() {
         return numero;
     }
@@ -44,5 +47,13 @@ public class Categorie {
 
     public void setProduit(List<Produit> produit) {
         this.produit = produit;
+    }
+
+    public Administrateur getAdministrateur() {
+        return administrateur;
+    }
+
+    public void setAdministrateur(Administrateur administrateur) {
+        this.administrateur = administrateur;
     }
 }

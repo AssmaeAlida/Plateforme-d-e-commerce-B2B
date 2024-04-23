@@ -6,7 +6,7 @@ export default function HeroPageClt(){
     const navigate = useNavigate();
     function navigation2(event){
         event.preventDefault();
-        navigate("/")
+        navigate("/createStore")
     }
     return (
        
