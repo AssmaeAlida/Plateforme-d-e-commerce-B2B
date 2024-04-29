@@ -12,7 +12,7 @@ export default function InfosPersonnelles() {
   const [showAlert, setShowAlert] = useState(false);
   const [selectedFile, setSelectedFile] = useState(null);
   const [imageUploader, setImageUploader] = useState(
-    sessionStorage.getItem("imageUploader")
+    sessionStorage.getItem("imageUploader") 
   );
   const email = sessionStorage.getItem("email");
   const navigate = useNavigate();
@@ -91,7 +91,12 @@ export default function InfosPersonnelles() {
       if (response.status === 200) {
         console.log("Image upload successful");
         setImageUploader(response.data.image);
-      } else {
+            scrollToTop(800);
+            setTimeout(() => {
+                window.location.reload();
+            }, 2000);
+
+          } else {
         console.log("Image upload failed");
       }
     } catch (error) {
