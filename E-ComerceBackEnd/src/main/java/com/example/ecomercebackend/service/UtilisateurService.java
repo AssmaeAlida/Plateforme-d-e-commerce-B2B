@@ -5,10 +5,28 @@ import com.example.ecomercebackend.dao.UtilisateurDao;
 import com.example.ecomercebackend.service.Mail.MailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Random;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.StringUtils;
+import org.springframework.web.multipart.MultipartFile;
+import java.io.IOException;
+import java.util.List;
 import java.util.Random;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.mail.MessagingException;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.util.StringUtils;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import javax.mail.MessagingException;
 
 @Service
@@ -175,6 +193,27 @@ public Utilisateur changePassword(String token, String newPassword) {
     }
     return null;
 }
+
+    public Utilisateur uploadImage(String email, MultipartFile file) throws IOException {
+        String baseUrl = "http://localhost:8080/uploaded-images/";
+        String filename = StringUtils.cleanPath(file.getOriginalFilename());
+
+        Path storageDirectory = Paths.get("path/to/your/directory"); // replace with your directory path
+        if (!Files.exists(storageDirectory)) {
+            Files.createDirectories(storageDirectory);
+        }
+
+        Path destinationPath = storageDirectory.resolve(Path.of(filename));
+        file.transferTo(destinationPath);
+
+        Utilisateur user = utilisateurDao.findByEmail(email);
+        if (user != null) {
+            user.setImage(baseUrl + filename);  // Save the URL instead of the path
+            utilisateurDao.save(user);
+        }
+        return user;
+    }
+
 }
 
 

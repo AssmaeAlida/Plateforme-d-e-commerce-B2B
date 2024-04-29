@@ -1,6 +1,6 @@
 import "./TextField1.css";
 import { useState } from "react";
-export default function TextField({ title, icon,type, text  }) {
+export default function TextField({ title, icon,type, text , onChange }) {
   
   return (
     <div className="textfield1">
@@ -10,7 +10,7 @@ export default function TextField({ title, icon,type, text  }) {
       <div className="inputext1">
         {icon}
         <div className="vertical-line1"></div>
-        <input type={type} placeholder={text}  /> {/* Trim whitespace */}
+        <input type={type} placeholder={text} onChange={onChange}  /> {/* Trim whitespace */}
       </div>
     </div>
   );

@@ -22,7 +22,8 @@ export default function LoginAdmin(){
           const response = await axios.post(`http://localhost:8089/ecomerce-backend/Administarteur/signIn/email/${email}/password/${password}`);
   
           if (response.data) {
-              navigate('/home');
+            console.log(response.data);
+              navigate('/');
               setErrorMessage("")
               // User exists, you can proceed with further actions (e.g., redirect to another page)
           } else {
