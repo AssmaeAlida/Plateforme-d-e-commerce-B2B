@@ -54,7 +54,7 @@ export default function LoginForm() {
                 <form onSubmit={handleLogin}>
                     <RegisterTitle title="Login"/>
                     <Textfield title="Email Address" icon={<Icon1 />} text="Enter Your Email" type="email" value={email} onChange={(event) => setEmail(event.target.value)} />
-                    <Textfield title="Password" icon={<Icon2 />} text="Enter Your Password" type="password" value={password} onChange={(event) => setPassword(event.target.value)} />
+                    <Textfield title="Password" icon={<Icon2 />} text="Enter Your Password" type="text" value={password} onChange={(event) => setPassword(event.target.value)} />
                     {errorMessage && <div className="error-message">{errorMessage}</div>}
                     <div className="flex">
                         <div className="checkbox">

@@ -46,8 +46,11 @@ public class UtilisateurWs {
         return utilisateurService.changePassword(token,password);
     }
 
+    @PostMapping("/matchEncoder/email/{email}/password/{password}")
 
-
+    public Utilisateur matchEncoder(String email, String password) {
+        return utilisateurService.matchEncoder(email, password);
+    }
 
     @PostMapping("/resetPassword/token/{token}")
 

@@ -42,12 +42,24 @@ public class UtilisateurService {
         return null;
     }
 
+    public Utilisateur matchEncoder(String email , String password){
+        Utilisateur utilisateur = utilisateurDao.findByEmail(email);
+        if (utilisateur != null && passwordEncoder.matches(password, utilisateur.getPassword())) {
+            return utilisateur;
+        }
+        return null;
+    }
+
     @Transactional
     public int signUp(String email, String password) {
         Utilisateur existingUser = utilisateurDao.findByEmail(email);
         if (existingUser == null) {
             Utilisateur newUser = new Utilisateur();
             newUser.setEmail(email);
+            newUser.setAdresse("undefined");
+            newUser.setImage("undefined");
+            newUser.setNomComplet("undefined");
+            newUser.setTelephone("undefined");
             newUser.setPassword(passwordEncoder.encode(password)); // Hash the password before storing
             utilisateurDao.save(newUser);
             return 1;

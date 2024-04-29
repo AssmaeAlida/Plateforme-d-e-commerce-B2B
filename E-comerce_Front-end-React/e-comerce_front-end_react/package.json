@@ -14,6 +14,7 @@
     "autoprefixer": "^10.4.19",
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
+    "crypto-js": "^4.2.0",
     "lottie-react": "^2.4.0",
     "postcss-cli": "^11.0.0",
     "react": "^18.2.0",
