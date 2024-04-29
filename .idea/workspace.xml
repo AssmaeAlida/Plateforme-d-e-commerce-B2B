@@ -4,60 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85cca5af-6f4d-42db-921d-8fba938416a5" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/images/Capture d'écran 2024-03-22 233106.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/path/to/your/directory/WIN_20240404_01_29_53_Pro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/path/to/your/directory/e136114cd3bdc194a49e6314b6faf636.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/6/06d99a793caceecb31b0d6e27bd0328f4c1ba6d9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/6/06d99a793caceecb31b0d6e27bd0328f4c1ba6d9" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/c/0c675fe202a9d2d48486c5ff733785bee212c76f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/4/2419fa3bef53a90f08f872881caf35da1738481e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/4751bf0e6ded45d3343559bacbb91631ec79830c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/4751bf0e6ded45d3343559bacbb91631ec79830c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5a476877135b937919038175e68ba491014373f5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5a476877135b937919038175e68ba491014373f5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/81ecb20ec5585c8747825dd5fd2540de1fccadee" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/81ecb20ec5585c8747825dd5fd2540de1fccadee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/f/cf7b1c9203d66824353573f21d9a5949c60eb90a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d3ff83bafc74925d37da66411b2ce4f5e4266512" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d9cc4f25c32a6af769bce081ff44422819ededca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dc3762b297874934ad4f74136e18b860779b399c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/d/ddf5fb82fe783e42f0cafa883567af7429e4f01c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/8/f8ed38e5dfd548be94b7b1c22a0bf125f50d3108" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/c/0c675fe202a9d2d48486c5ff733785bee212c76f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/4/2419fa3bef53a90f08f872881caf35da1738481e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/f/cf7b1c9203d66824353573f21d9a5949c60eb90a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/3/d3ff83bafc74925d37da66411b2ce4f5e4266512" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/9/d9cc4f25c32a6af769bce081ff44422819ededca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/c/dc3762b297874934ad4f74136e18b860779b399c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/d/ddf5fb82fe783e42f0cafa883567af7429e4f01c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/8/f8ed38e5dfd548be94b7b1c22a0bf125f50d3108" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/service/UtilisateurService.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/service/UtilisateurService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/webService/UtilisateurWs.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/src/main/java/com/example/ecomercebackend/webService/UtilisateurWs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/Config/CorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/Config/CorsConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/EComerceBackEndApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/EComerceBackEndApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/Administrateur.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/Administrateur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/Categorie.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/Categorie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/NotificationAV.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/NotificationAV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/NotificationCV.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/NotificationCV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/NotificationVA.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/NotificationVA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/Produit.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/Produit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/Utilisateur.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/bean/Utilisateur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/dao/AdministarteurDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/dao/AdministarteurDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/dao/CategorieDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/dao/CategorieDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/dao/ProduitDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/dao/ProduitDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/dao/UtilisateurDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/dao/UtilisateurDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/service/AdministarteurService.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/service/AdministarteurService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/service/CategorieService.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/service/CategorieService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/service/Mail/MailService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/service/Mail/MailService$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/service/Mail/MailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/service/Mail/MailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/service/ProduitService.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/service/ProduitService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/service/UtilisateurService.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/service/UtilisateurService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/webService/AdministarteurWs.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/webService/AdministarteurWs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/webService/CategorieWs.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/webService/CategorieWs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/webService/ProduitWs.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/webService/ProduitWs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/webService/UtilisateurWs.class" beforeDir="false" afterPath="$PROJECT_DIR$/E-ComerceBackEnd/target/classes/com/example/ecomercebackend/webService/UtilisateurWs.class" afterDir="false" />
-    </list>
+    <list default="true" id="85cca5af-6f4d-42db-921d-8fba938416a5" name="Changes" comment="commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +93,7 @@
       <workItem from="1713729639290" duration="624000" />
       <workItem from="1713732348700" duration="987000" />
       <workItem from="1714312678800" duration="7091000" />
-      <workItem from="1714320697505" duration="11946000" />
+      <workItem from="1714320697505" duration="12266000" />
     </task>
     <task id="LOCAL-00001" summary=" Sprint 1 DoooooNE">
       <option name="closed" value="true" />
@@ -164,21 +111,21 @@
       <option name="project" value="LOCAL" />
       <updated>1713725805487</updated>
     </task>
-    <task id="LOCAL-00003" summary="a commit of some edits and the frond part">
+    <task id="LOCAL-00003" summary="commit">
       <option name="closed" value="true" />
-      <created>1712509562628</created>
+      <created>1714409781662</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1712509562628</updated>
+      <updated>1714409781662</updated>
     </task>
-    <task id="LOCAL-00004" summary="a commit of some edits and the frond part">
+    <task id="LOCAL-00004" summary="commit">
       <option name="closed" value="true" />
-      <created>1712509872736</created>
+      <created>1714409873578</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1712509872736</updated>
+      <updated>1714409873578</updated>
     </task>
     <task id="LOCAL-00005" summary="the frond part">
       <option name="closed" value="true" />
@@ -228,7 +175,7 @@
       <option name="project" value="LOCAL" />
       <updated>1713726049749</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
