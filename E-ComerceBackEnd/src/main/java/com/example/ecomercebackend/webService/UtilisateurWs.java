@@ -2,12 +2,17 @@ package com.example.ecomercebackend.webService;
 
 import com.example.ecomercebackend.bean.Utilisateur;
 import com.example.ecomercebackend.service.UtilisateurService;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.List;
-
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/ecomerce-backend/Utilisateur")
@@ -69,5 +74,32 @@ public class UtilisateurWs {
     public Utilisateur addStock(@RequestBody Utilisateur utilisateur) {
         return utilisateurService.addStock(utilisateur);
     }
+
+
+
+// ...
+
+@PostMapping(value = "/uploadImage", consumes = {"multipart/form-data"})
+public Utilisateur uploadImage(@RequestParam("email") String email,
+                               @RequestParam("image") MultipartFile file) throws IOException {
+    return utilisateurService.uploadImage(email, file);
 }
+
+
+
+@PostMapping("/logout")
+public String logout(HttpServletRequest request) {
+    HttpSession session = request.getSession(false);
+    if (session != null) {
+        session.invalidate();
+        return "User logged out";
+    } else {
+        return "No active session to logout";
+    }
+}
+
+
+}
+
+
 

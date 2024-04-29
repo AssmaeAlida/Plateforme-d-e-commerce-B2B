@@ -1,14 +1,14 @@
 
-ˆ	java:S112#"FDefine and throw a dedicated exception instead of using a generic one.(’¯¬8Ò¬ãğ1J$e43c85ee-740c-4439-9e28-bd635b9fecec
-	java:S112<"FDefine and throw a dedicated exception instead of using a generic one.(³«çëüÿÿÿÿ8Ó¬ãğ1J$42c5c4b7-52b3-40ae-a93c-d392fb25a652
-	java:S112D"FDefine and throw a dedicated exception instead of using a generic one.(ª¥—Üüÿÿÿÿ8Ó¬ãğ1J$8f22323c-b8d4-4b67-82dc-4ff6c84778d8
-	java:S112G"FDefine and throw a dedicated exception instead of using a generic one.(·ê³Ûıÿÿÿÿ8Ó¬ãğ1J$cb8463d7-cde5-4066-ac27-ecf85b3b0dfa
-ˆ	java:S112O"FDefine and throw a dedicated exception instead of using a generic one.(ä³šŠ8Ó¬ãğ1J$6c663017-97d7-436e-beb8-f3081a4256ec
-“
-java:S1192<"KDefine a constant instead of duplicating this literal " not found" 3 times.(³«çëüÿÿÿÿ8Ô¬ãğ1J$ba4dafe1-f5d0-4cd1-8d6c-a6162b9dae08
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ç¬ãğ1J$3710d3b0-8cd1-45f1-8756-523bb532f723
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ç¬ãğ1J$8e526236-b315-475a-bde6-f293df7e321a
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ç¬ãğ1J$924ddfd0-77ff-4021-b5ac-d989c13e6eac
+[	java:S112#"FDefine and throw a dedicated exception instead of using a generic one.(’¯¬
+`	java:S112<"FDefine and throw a dedicated exception instead of using a generic one.(³«çëüÿÿÿÿ
+`	java:S112D"FDefine and throw a dedicated exception instead of using a generic one.(ª¥—Üüÿÿÿÿ
+`	java:S112G"FDefine and throw a dedicated exception instead of using a generic one.(·ê³Ûıÿÿÿÿ
+[	java:S112O"FDefine and throw a dedicated exception instead of using a generic one.(ä³šŠ
+f
+java:S1192<"KDefine a constant instead of duplicating this literal " not found" 3 times.(³«çëüÿÿÿÿ
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
