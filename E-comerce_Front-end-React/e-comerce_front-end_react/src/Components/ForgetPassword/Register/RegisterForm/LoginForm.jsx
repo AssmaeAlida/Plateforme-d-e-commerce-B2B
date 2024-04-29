@@ -1,5 +1,5 @@
 import "./LoginForm.css";
-import { useState } from "react";
+import { useState , useEffect } from "react";
 import RegisterTitle from "./RegisterTitle/RegisterTitle";
 import Textfield from "./Textfield/Textfield";
 import SignUp from "./SignUp/SignUp";
@@ -10,6 +10,11 @@ export default function LoginForm() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
+    sessionStorage.setItem('email', email);
+    sessionStorage.setItem('password', password);
+
+    // Retrieve email from sessionStorage
+    
 
     const navigate = useNavigate();
     const handleLogin = async (event) => {

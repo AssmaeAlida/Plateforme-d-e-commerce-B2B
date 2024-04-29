@@ -1,6 +1,6 @@
 import "./TextField1.css";
 import { useState } from "react";
-export default function TextField({ title,type, text  }) {
+export default function TextField({ title,type, text , value , onChange }) {
   
   return (
     <div className="textfield">
@@ -8,7 +8,7 @@ export default function TextField({ title,type, text  }) {
         <label>{title}</label>
       </div>
       <div className="inputext2">
-        <input className="input-place" type={type} placeholder={text}  /> {/* Trim whitespace */}
+        <input className="input-place" type={type} placeholder={text} value={value} onChange={onChange} /> {/* Trim whitespace */}
       </div>
     </div>
   );

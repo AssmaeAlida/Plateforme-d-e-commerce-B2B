@@ -109,22 +109,46 @@ public Utilisateur changePassword(String token, String newPassword) {
     return null;
 }
 
-public Utilisateur updateUser(Utilisateur updatedUser) {
-    Utilisateur existingUser = utilisateurDao.findByEmail(updatedUser.getEmail());
-    if (existingUser != null) {
-        existingUser.setStoreName(updatedUser.getStoreName());
-        existingUser.setEmail(updatedUser.getEmail());
-        existingUser.setPassword(passwordEncoder.encode(updatedUser.getPassword()));
-        existingUser.setNomComplet(updatedUser.getNomComplet());
-        existingUser.setInfoCarteBancaire(updatedUser.getInfoCarteBancaire());
-        existingUser.setImage(updatedUser.getImage());
-        existingUser.setTelephone(updatedUser.getTelephone());
-        utilisateurDao.save(existingUser);
-        return existingUser;
-    }
-    return null;
-}
+    public Utilisateur updateUser(Utilisateur updatedUser) {
+        Utilisateur existingUser = utilisateurDao.findByEmail(updatedUser.getEmail());
+        if (existingUser != null) {
+            if (updatedUser.getStoreName() != null || updatedUser.getNomComplet() != null || updatedUser.getInfoCarteBancaire() != null || updatedUser.getProduits() != null) {
+                existingUser.setVendeur(true);
+            }
 
+            if (updatedUser.getStoreName() != null) {
+                existingUser.setStoreName(updatedUser.getStoreName());
+            }
+            if (updatedUser.getEmail() != null) {
+                existingUser.setEmail(updatedUser.getEmail());
+            }
+            if (updatedUser.getPassword() != null) {
+                existingUser.setPassword(passwordEncoder.encode(updatedUser.getPassword()));
+            }
+            if (updatedUser.getNomComplet() != null) {
+                existingUser.setNomComplet(updatedUser.getNomComplet());
+            }
+            if (updatedUser.getInfoCarteBancaire() != null) {
+                existingUser.setInfoCarteBancaire(updatedUser.getInfoCarteBancaire());
+            }
+            if (updatedUser.getImage() != null) {
+                existingUser.setImage(updatedUser.getImage());
+            }
+            if (updatedUser.getTelephone() != null) {
+                existingUser.setTelephone(updatedUser.getTelephone());
+            }
+            if (updatedUser.getAdresse() != null) {
+                existingUser.setAdresse(updatedUser.getAdresse());
+            }
+            if (updatedUser.getProduits() != null) {
+                existingUser.setProduits(updatedUser.getProduits());
+            }
+
+            utilisateurDao.save(existingUser);
+            return existingUser;
+        }
+        return null;
+    }
 
 
     public Utilisateur addStock( Utilisateur utilisateur) {
