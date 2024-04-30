@@ -12,7 +12,10 @@ export default function NavBarVend({src , alt}) {
         event.preventDefault();
         navigate("/Profile");
     }
-
+    function navigation3(event){
+        event.preventDefault();
+        navigate("/homeVend");
+    }
     function navigation2(event){
         event.preventDefault();
         navigate("/MyStore"); // Naviguer vers la page My Store
@@ -31,7 +34,7 @@ export default function NavBarVend({src , alt}) {
         <div className="navbar-container">
             <Logo />
             <div className="navbar-links">
-                <div className={`nav-link1 ${isActive('/') ? 'active' : ''}`} >Home</div>
+                <div className={`nav-link1 ${isActive('/') ? 'active' : ''}`}onClick={navigation3} >Home</div>
                 <div className={`nav-link2 ${isActive('/products') ? 'active' : ''}`} >Products</div>
                 <div className={`nav-link2 ${isActive('/MyStore') ? 'active orange' : ''}`} onClick={navigation2}>My Store</div>
                 <div className={`nav-link3 ${isActive('/about') ? 'active' : ''}`} >About Us</div>
