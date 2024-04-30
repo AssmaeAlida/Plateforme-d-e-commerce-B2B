@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85cca5af-6f4d-42db-921d-8fba938416a5" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6a95e70b2c9e0c1c8e8e98c580070f8d35ae1971" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6a95e70b2c9e0c1c8e8e98c580070f8d35ae1971" afterDir="false" />
-    </list>
+    <list default="true" id="85cca5af-6f4d-42db-921d-8fba938416a5" name="Changes" comment="commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +82,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a70af0bb-6305-4967-addc-5806126a975c" name="Changes" comment="com" />
+      <changelist id="85cca5af-6f4d-42db-921d-8fba938416a5" name="Changes" comment="commit" />
       <created>1713480469292</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -92,6 +90,10 @@
       <workItem from="1713480471439" duration="1208000" />
       <workItem from="1713554509611" duration="607000" />
       <workItem from="1713696540536" duration="21837000" />
+      <workItem from="1713729639290" duration="624000" />
+      <workItem from="1713732348700" duration="987000" />
+      <workItem from="1714312678800" duration="7091000" />
+      <workItem from="1714320697505" duration="12266000" />
     </task>
     <task id="LOCAL-00001" summary=" Sprint 1 DoooooNE">
       <option name="closed" value="true" />
@@ -109,21 +111,21 @@
       <option name="project" value="LOCAL" />
       <updated>1713725805487</updated>
     </task>
-    <task id="LOCAL-00003" summary="a commit of some edits and the frond part">
+    <task id="LOCAL-00003" summary="commit">
       <option name="closed" value="true" />
-      <created>1712509562628</created>
+      <created>1714409781662</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1712509562628</updated>
+      <updated>1714409781662</updated>
     </task>
-    <task id="LOCAL-00004" summary="a commit of some edits and the frond part">
+    <task id="LOCAL-00004" summary="commit">
       <option name="closed" value="true" />
-      <created>1712509872736</created>
+      <created>1714409873578</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1712509872736</updated>
+      <updated>1714409873578</updated>
     </task>
     <task id="LOCAL-00005" summary="the frond part">
       <option name="closed" value="true" />
@@ -173,11 +175,22 @@
       <option name="project" value="LOCAL" />
       <updated>1713726049749</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

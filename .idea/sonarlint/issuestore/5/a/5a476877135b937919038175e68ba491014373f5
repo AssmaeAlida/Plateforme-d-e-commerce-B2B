@@ -1,8 +1,14 @@
 
-	java:S112$"FDefine and throw a dedicated exception instead of using a generic one.(Ô§»†şÿÿÿÿ8ÀƒÈğ1J$95f227e4-975d-4de9-b4b6-2586b4d88418
+	java:S112)"FDefine and throw a dedicated exception instead of using a generic one.(Ô§»†şÿÿÿÿ8æêÔò1J$b0a0c5b2-5c5e-4fa7-8916-a6593e888e62
+Ô
+java:S4449Ø"Annotate the parameter with @javax.annotation.Nullable in method 'cleanPath' declaration, or make sure that null can not be passed as argument.(ï¼åÜ8üçêÔò1J$98924c93-6be3-496d-ad6f-989dd2d5e98e
+Ô
+java:S4449Á"Annotate the parameter with @javax.annotation.Nullable in method 'cleanPath' declaration, or make sure that null can not be passed as argument.(ï¼åÜ8üçêÔò1J$6f4de6ea-a34a-4cc0-a3a9-19a8e6b524d4
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ßƒÈğ1J$4e161278-4408-4a24-a878-221dfa75abb0
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÿçêÔò1J$4632211a-ae4c-497d-8182-7bf3592e2258
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ßƒÈğ1J$d49124fe-5721-4ea7-8db3-7d87226cae1e
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÿçêÔò1J$d0cdba30-0730-4410-a5b8-daaf94f8e56b
 `
-java:S2119H"Save and re-use this "Random".(¼İÅf8ğƒÈğ1J$a41ad5c1-193d-45e3-9319-bd5f28bab40a
+java:S2119M"Save and re-use this "Random".(¼İÅf8èêÔò1J$f6a0bcf3-9668-4e63-93e0-3227e3ab08d7
+›
+java:S3776€"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(éê×¥øÿÿÿÿ8•èêÔò1J$a1ae9946-30b4-4601-aad9-7a9daa3ce459

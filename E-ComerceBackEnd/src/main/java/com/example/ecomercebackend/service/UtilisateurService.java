@@ -6,13 +6,18 @@ import com.example.ecomercebackend.service.Mail.MailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Random;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.mail.MessagingException;
-
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.util.StringUtils;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 @Service
 
 public class UtilisateurService {
@@ -115,24 +120,53 @@ public Utilisateur changePassword(String token, String newPassword) {
     return null;
 }
 
+
+
+
+
+
 public Utilisateur updateUser(Utilisateur updatedUser) {
     Utilisateur existingUser = utilisateurDao.findByEmail(updatedUser.getEmail());
     if (existingUser != null) {
-        existingUser.setStoreName(updatedUser.getStoreName());
-        existingUser.setEmail(updatedUser.getEmail());
-        existingUser.setPassword(passwordEncoder.encode(updatedUser.getPassword()));
-        existingUser.setNomComplet(updatedUser.getNomComplet());
-        existingUser.setInfoCarteBancaire(updatedUser.getInfoCarteBancaire());
-        existingUser.setImage(updatedUser.getImage());
-        existingUser.setTelephone(updatedUser.getTelephone());
-        existingUser.setAdresse(updatedUser.getAdresse());
-        existingUser.setProduits(updatedUser.getProduits());
-        existingUser.setVendeur(updatedUser.isVendeur());
+        if (updatedUser.getStoreName() != null || updatedUser.getNomComplet() != null || updatedUser.getInfoCarteBancaire() != null || updatedUser.getProduits() != null) {
+            existingUser.setVendeur(true);
+        }
+
+        if (updatedUser.getStoreName() != null) {
+            existingUser.setStoreName(updatedUser.getStoreName());
+        }
+        if (updatedUser.getEmail() != null) {
+            existingUser.setEmail(updatedUser.getEmail());
+        }
+        if (updatedUser.getPassword() != null) {
+            existingUser.setPassword(passwordEncoder.encode(updatedUser.getPassword()));
+        }
+        if (updatedUser.getNomComplet() != null) {
+            existingUser.setNomComplet(updatedUser.getNomComplet());
+        }
+        if (updatedUser.getInfoCarteBancaire() != null) {
+            existingUser.setInfoCarteBancaire(updatedUser.getInfoCarteBancaire());
+        }
+        if (updatedUser.getImage() != null) {
+            existingUser.setImage(updatedUser.getImage());
+        }
+        if (updatedUser.getTelephone() != null) {
+            existingUser.setTelephone(updatedUser.getTelephone());
+        }
+        if (updatedUser.getAdresse() != null) {
+            existingUser.setAdresse(updatedUser.getAdresse());
+        }
+        if (updatedUser.getProduits() != null) {
+            existingUser.setProduits(updatedUser.getProduits());
+        }
+
         utilisateurDao.save(existingUser);
         return existingUser;
     }
     return null;
 }
+
+
 
 
 
@@ -148,6 +182,58 @@ public Utilisateur updateUser(Utilisateur updatedUser) {
     }
     return null;
 }
+
+
+
+
+// ...
+
+public Utilisateur uploadImage(String email, MultipartFile file) throws IOException {
+    String baseUrl = "http://localhost:8080/uploaded-images/";
+    String filename = StringUtils.cleanPath(file.getOriginalFilename());
+
+    Path storageDirectory = Paths.get("./images");
+    if (!Files.exists(storageDirectory)) {
+        Files.createDirectories(storageDirectory);
+    }
+
+    Path destinationPath = storageDirectory.resolve(Path.of(filename));
+    file.transferTo(destinationPath);
+
+    Utilisateur user = utilisateurDao.findByEmail(email);
+    if (user != null) {
+        user.setImage(baseUrl + filename);  // Save the URL instead of the path
+        utilisateurDao.save(user);
+    }
+    return user;
+}
+
+
+public Utilisateur updateImage(String email, MultipartFile file) throws IOException {
+    Utilisateur user = utilisateurDao.findByEmail(email);
+    if (user != null && user.getImage() != null) {
+        String baseUrl = "http://localhost:8080/uploaded-images/";
+        String filename = StringUtils.cleanPath(file.getOriginalFilename());
+
+        Path storageDirectory = Paths.get("./images");
+        if (!Files.exists(storageDirectory)) {
+            Files.createDirectories(storageDirectory);
+        }
+
+        Path destinationPath = storageDirectory.resolve(Path.of(filename));
+        file.transferTo(destinationPath);
+
+        user.setImage(baseUrl + filename);  // Update the URL of the image
+        utilisateurDao.save(user);
+    }
+    return user;
+}
+
+
+
+
+
+
 }
 
 
