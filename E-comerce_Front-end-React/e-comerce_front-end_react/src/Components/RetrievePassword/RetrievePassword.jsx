@@ -5,6 +5,7 @@ export default function RetrievePassword(){
     return (
     
         <>
+        <h1></h1>
         <PartOrange/>
         <RetrievePasswordForm/>
 
