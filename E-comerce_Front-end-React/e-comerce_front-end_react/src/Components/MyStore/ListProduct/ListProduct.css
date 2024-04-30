@@ -1,0 +1,172 @@
+.TitleList{
+    margin-top: 120px;
+    margin-left: 209px;
+    color: #000;
+    font-family: Inter;
+    font-size: 36.469px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.SearchProduct{
+    padding-left: 44px;
+    margin-left: 151px;
+    margin-top: 37px;
+    width: 443px;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #9A9A9A;
+    background: rgba(255, 255, 255, 0.21);
+}
+.sortDate{
+    width: 174px;
+height: 47px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #9A9A9A;
+background: rgba(255, 255, 255, 0.21);
+}
+.icon-searchhh{
+    margin-left: 173px;
+    margin-top: -35px;
+}
+.price-filter{
+    margin-left: 1165px;
+    margin-top: -34px;
+}
+.sDate{
+    margin-left: 967px;
+    margin-top: -34px;
+}
+
+
+/* pour la table*/
+.table-auto {
+    width: 1283px;
+    height: 846px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: var(--White, #FFF);
+
+    /* Shadow 2 */
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.12);
+    margin-left: 103px;
+    margin-top: 103px;
+    border-collapse: collapse;
+
+}
+
+.coll{
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 22px;
+    padding-bottom: 22px;
+
+}
+.table-line tr{
+    line-height: 1; /* Ajustez cette valeur selon vos besoins */
+
+}
+.icon-delete{
+    margin-left: 70px;
+    margin-top: -25px;
+
+}
+.icon-modifier{
+    margin-top: -325px;
+    margin-left: 41px;
+
+}
+.ligneTable{
+    padding-bottom: 623px;
+    padding-left: 93px;
+
+
+}
+/*pop up */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 543px; /* Ajustez la largeur selon vos besoins */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+}
+.QstDelete{
+    color: #000;
+    font-family: Inter;
+    font-size: 25.011px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transform: rotate(0.064deg);
+}
+.QstDelete2{
+    color: #9A9A9A;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -4px;
+}
+.modal-content {
+    text-align: center;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+}
+
+.modal-buttons button {
+    margin: 0 10px;
+}
+.btn-deleteProduct{
+    border-radius: 10px;
+    background: #FF5722;
+    width: 143px;
+    height: 47px;
+    transform: rotate(0.064deg);
+    flex-shrink: 0;
+    border: #FF5722;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18.55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.cancel-popup{
+    border-radius: 10px;
+    border: 1px solid #FF5722;
+    background: #FFF;
+    width: 143px;
+    height: 47px;
+    transform: rotate(0.064deg);
+    flex-shrink: 0;
+    color: #FF5722;
+    font-family: Inter;
+    font-size: 18.55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

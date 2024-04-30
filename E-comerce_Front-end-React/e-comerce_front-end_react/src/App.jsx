@@ -14,6 +14,8 @@ import { useEffect } from 'react'
 import HomeClt from './Components/Home/HomeClt/HomeClt'
 import Homevend from './Components/Home/HomeVend/HomeVend'
 import Profile from './Components/Profile/Profile'
+import MyStore from './Components/MyStore/MyStore'
+import PageAddProduct from './Components/PageAddProduct/PageAddProduct'
 
 function App() {
 
@@ -33,8 +35,10 @@ function App() {
         <Route path='/createStore' element={<Steeper/>}></Route>
 
         <Route path='/home' element={<HomeClt/>}></Route>
-        <Route path='/Profile' element={<Homevend/>}></Route>
-        <Route path='/homeVend' element={<Profile/>}></Route>
+        <Route path='/homeVend' element={<Homevend/>}></Route>
+        <Route path='/Profile' element={<Profile/>}></Route>
+        <Route path='/MyStore' element={<MyStore/>}></Route>
+        <Route path='/AddProduct' element={<PageAddProduct/>}></Route>
 
         
 

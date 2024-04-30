@@ -1,0 +1,53 @@
+.TopArticle{
+    margin-top: 47px;
+}
+
+.image-product{
+    margin-top: 26px;
+    margin-left: 43px;
+    width: 55px;
+    height: 45px;
+    background:  lightgray 50% / cover no-repeat;
+}
+.NameTopProduct{
+    color: #000;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 191px;
+    height: 16px;
+    margin-left: 122px;
+    margin-top: -41px;
+}
+.icon-available{
+    margin-top: -58px;
+    margin-left: 462px;
+
+}
+.available{
+    margin-top: -13px;
+    margin-left: 11px;
+    width: 44px;
+    height: 13px;
+    color: #35813C;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.Sales{
+    width: 50px;
+    height: 11px;
+    color: #000;
+    font-family: Inter;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-left: 123px;
+    margin-top: -7px;
+
+}

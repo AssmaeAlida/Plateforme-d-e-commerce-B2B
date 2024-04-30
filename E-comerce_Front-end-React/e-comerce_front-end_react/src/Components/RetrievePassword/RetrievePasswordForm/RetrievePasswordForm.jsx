@@ -112,10 +112,6 @@ export default function RetrievePasswordForm() {
             </button>
             <div style={{ width: 610, height: 47, left: 727, top: 444, position: 'absolute' }}>
                 <button onClick={handleSignIN} style={{ width: 623, height: 47, color: 'white', left: 0, top: 0, position: 'absolute', background: '#FF5722', borderRadius: 8, border: 'none', cursor: 'pointer', marginTop: -73, fontWeight: '700' }}>Sign in</button>
-<<<<<<< HEAD
-=======
-                <button onClick={handleSignIN} style={{ width: 623, height: 47, color: 'white', left: 0, top: 0, position: 'absolute', background: '#FF5722', borderRadius: 8, border: 'none', cursor: 'pointer', marginTop: -73, fontWeight: '700' }} >Sign in</button>
->>>>>>> 428d20fee83de3aad0f424ac5f077d95886d602d
             </div>
         </div>
     );

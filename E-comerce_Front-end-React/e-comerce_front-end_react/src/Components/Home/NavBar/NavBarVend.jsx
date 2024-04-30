@@ -1,11 +1,12 @@
 import './NavBar.css'; // Importing the CSS file
 import Logo from "./Logo/Logo";
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 export default function NavBarVend({src , alt}) {
 
     const navigate = useNavigate();
+    const location = useLocation();
 
     function navigation1(event){
         event.preventDefault();
@@ -16,6 +17,10 @@ export default function NavBarVend({src , alt}) {
         event.preventDefault();
         navigate("/MyStore"); // Naviguer vers la page My Store
     }
+    const isActive = (path) => {
+        return location.pathname === path;
+    };
+
 
     const [showDropdown, setShowDropdown] = useState(false);
 
@@ -25,12 +30,11 @@ export default function NavBarVend({src , alt}) {
     return (
         <div className="navbar-container">
             <Logo />
-
             <div className="navbar-links">
-                <div className="nav-link1">Home</div>
-                <div className="nav-link2">Products</div>
-                <div className="nav-link2" onClick={navigation2}>My Store</div> {/* Ajoutez onClick */}
-                <div className="nav-link3">About Us</div>
+                <div className={`nav-link1 ${isActive('/') ? 'active' : ''}`} >Home</div>
+                <div className={`nav-link2 ${isActive('/products') ? 'active' : ''}`} >Products</div>
+                <div className={`nav-link2 ${isActive('/MyStore') ? 'active orange' : ''}`} onClick={navigation2}>My Store</div>
+                <div className={`nav-link3 ${isActive('/about') ? 'active' : ''}`} >About Us</div>
             </div>
 
             <div className="search-container">

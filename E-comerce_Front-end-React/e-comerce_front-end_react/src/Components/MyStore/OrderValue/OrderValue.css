@@ -1,0 +1,38 @@
+.OrderValue{
+    width: 336px;
+    height: 152px;
+    flex-shrink: 0;
+    filter: drop-shadow(-4px 10px 11.9px rgba(0, 0, 0, 0.25));
+    margin-top: 47px;
+    margin-left: 179px;
+}
+.OrderValueTitle{
+    color: #FFF;
+    font-family: inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: -149px;
+    margin-left: 43px;
+}
+.OrderValueEEE{
+    color: #FFF;
+    font-family: inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 2px;
+    margin-left: 48px;
+}
+.OrderValue2{
+    color: #FFF;
+font-family: inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: -25px;
+margin-left: 51px;
+}

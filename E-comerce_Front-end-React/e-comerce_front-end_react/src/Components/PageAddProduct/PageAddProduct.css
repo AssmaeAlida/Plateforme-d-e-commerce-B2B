@@ -1,0 +1,138 @@
+.ajouterProduit{
+    width: 630px;
+    height: 412.621px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: rgba(255, 87, 34, 0.10);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    margin-left: 468px;
+}
+.tiitle{
+    margin-left: 112px;
+    margin-top: 30px;
+    color: #000;
+    font-family: Inter;
+    font-size: 36.469px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.tiiitle2{
+    color: #9A9A9A;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -13px;
+    margin-left: -940px;
+}
+.icon-ajouterProd{
+    padding-top: 81px;
+    margin-left: 269px;
+
+}
+.icon-ajouterProd a{
+    color: #FF5722;
+    font-family: Inter;
+    font-size: 92px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 66px;
+    height: 131.435px;
+    flex-shrink: 0;
+    margin-left: 18px;
+    display: flex;
+    margin-top: -115px;}
+.titleAdd{
+    margin-left: 173px;
+
+    color: #000;
+    font-family: Inter;
+    font-size: 25.011px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.titleAddd2{
+    margin-top: -12px;
+
+    color: #9A9A9A;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.LabelnameProduct{
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 70px;
+    margin-left: 264px;
+}
+.inputNameProduct{
+    border-radius: 10px;
+    background: #F5F5F5;
+    width: 425px;
+    height: 50.635px;
+    flex-shrink: 0;
+    border: #9A9A9A;
+    color: #9A9A9A;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 256px;
+    margin-top: 20px;
+}
+.inputDescriptionProduct{
+    margin-top: 21px;
+    margin-left: 256px;
+    width: 950px;
+height: 246.71px;
+background: #F5F5F5;
+border: #9A9A9A;
+color: #9A9A9A;
+border-radius: 10px;
+color: #9A9A9A;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+.publish{
+    display: flex;
+    width: 950px;
+    padding: 10px 413px 13.403px 385px;
+    align-items: center;
+    border-radius: 10px;
+    background: #FF5722;
+    color: var(--White, #FFF);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    border: #FF5722;
+    margin-left: 259px;
+    margin-top: 73px;
+
+}
+.AddProduct2{
+    width: 1440px;
+    height: 1725px;
+}
+.icon-returrnn{
+    margin-top: 40px;
+    margin-left: 53px;
+}

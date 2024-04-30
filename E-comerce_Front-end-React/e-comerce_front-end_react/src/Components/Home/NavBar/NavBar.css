@@ -1,7 +1,7 @@
 .navbar-container {
-    margin-top: -8px;
-    margin-left: -11px;
-    width: 1516px;
+    margin-top: -16px;
+    margin-left: -5px;
+    width: 1492px;
     height: 80px;
     /* position: relative; */
     background: white;
@@ -134,4 +134,7 @@
     color: #FF5722; /* Changer la couleur du texte au survol */
     transform: scale(1.1); /* Appliquer une légère mise à l'échelle */
     transition: color 0.3s, transform 0.3s; /* Ajouter une transition fluide */
+}
+.nav-link2.active {
+    color: #FF5722;
 }

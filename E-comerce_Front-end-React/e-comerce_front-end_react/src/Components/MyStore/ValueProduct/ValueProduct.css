@@ -1,0 +1,43 @@
+
+.CardAllProduct{
+    margin-left: 940px;
+    margin-top: -196px;
+    width: 336px;
+    height: 152px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: rgba(255, 87, 34, 0.10);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), -4px 10px 11.9px -16px rgba(0, 0, 0, 0.25);
+}
+.CardAllProductTitle{
+    color: #000;
+    font-family: inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 25px;
+    padding-top: 33px;
+
+}
+.CardAllProducttt{
+    color: #000;
+    font-family: inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 32px;
+    margin-top: 10px;
+
+}
+.CardAllProduct2{
+    margin-left: 32px;
+    margin-top: -30px;
+    color: #2D7B34;
+    font-family: Assistant;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
