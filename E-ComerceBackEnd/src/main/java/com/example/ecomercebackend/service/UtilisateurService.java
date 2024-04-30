@@ -3,32 +3,14 @@ package com.example.ecomercebackend.service;
 import com.example.ecomercebackend.bean.Utilisateur;
 import com.example.ecomercebackend.dao.UtilisateurDao;
 import com.example.ecomercebackend.service.Mail.MailService;
-import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import java.net.InetAddress;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Random;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.transaction.annotation.Transactional;
-import org.springframework.util.StringUtils;
-import org.springframework.web.multipart.MultipartFile;
-import java.io.IOException;
 import java.util.List;
 import java.util.Random;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.mail.MessagingException;
-import org.springframework.web.multipart.MultipartFile;
-import org.springframework.util.StringUtils;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import javax.mail.MessagingException;
 
 @Service
@@ -41,10 +23,14 @@ public class UtilisateurService {
 
     private BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
+    public List<Utilisateur> findAll() {
+        return utilisateurDao.findAll();
+    }
 
     public Utilisateur addUser(Utilisateur utilisateur) {
         String hashedPassword = passwordEncoder.encode(utilisateur.getPassword());
         utilisateur.setPassword(hashedPassword);
+        utilisateur.setProduits(utilisateur.getProduits());
         Utilisateur existingUser = utilisateurDao.findByEmail(utilisateur.getEmail());
         if (existingUser != null) {
             throw new RuntimeException("Email is already in use");
@@ -62,24 +48,12 @@ public class UtilisateurService {
         return null;
     }
 
-    public Utilisateur matchEncoder(String email , String password){
-        Utilisateur utilisateur = utilisateurDao.findByEmail(email);
-        if (utilisateur != null && passwordEncoder.matches(password, utilisateur.getPassword())) {
-            return utilisateur;
-        }
-        return null;
-    }
-
     @Transactional
     public int signUp(String email, String password) {
         Utilisateur existingUser = utilisateurDao.findByEmail(email);
         if (existingUser == null) {
             Utilisateur newUser = new Utilisateur();
             newUser.setEmail(email);
-            newUser.setAdresse("undefined");
-            newUser.setImage("undefined");
-            newUser.setNomComplet("undefined");
-            newUser.setTelephone("undefined");
             newUser.setPassword(passwordEncoder.encode(password)); // Hash the password before storing
             utilisateurDao.save(newUser);
             return 1;
@@ -141,92 +115,39 @@ public Utilisateur changePassword(String token, String newPassword) {
     return null;
 }
 
-    public Utilisateur updateUser(Utilisateur updatedUser) {
-        Utilisateur existingUser = utilisateurDao.findByEmail(updatedUser.getEmail());
-        if (existingUser != null) {
-            if (updatedUser.getStoreName() != null || updatedUser.getNomComplet() != null || updatedUser.getInfoCarteBancaire() != null || updatedUser.getProduits() != null) {
-                existingUser.setVendeur(true);
-            }
-
-            if (updatedUser.getStoreName() != null) {
-                existingUser.setStoreName(updatedUser.getStoreName());
-            }
-            if (updatedUser.getEmail() != null) {
-                existingUser.setEmail(updatedUser.getEmail());
-            }
-            if (updatedUser.getPassword() != null) {
-                existingUser.setPassword(passwordEncoder.encode(updatedUser.getPassword()));
-            }
-            if (updatedUser.getNomComplet() != null) {
-                existingUser.setNomComplet(updatedUser.getNomComplet());
-            }
-            if (updatedUser.getInfoCarteBancaire() != null) {
-                existingUser.setInfoCarteBancaire(updatedUser.getInfoCarteBancaire());
-            }
-            if (updatedUser.getImage() != null) {
-                existingUser.setImage(updatedUser.getImage());
-            }
-            if (updatedUser.getTelephone() != null) {
-                existingUser.setTelephone(updatedUser.getTelephone());
-            }
-            if (updatedUser.getAdresse() != null) {
-                existingUser.setAdresse(updatedUser.getAdresse());
-            }
-            if (updatedUser.getProduits() != null) {
-                existingUser.setProduits(updatedUser.getProduits());
-            }
-
-            utilisateurDao.save(existingUser);
-            return existingUser;
-        }
-        return null;
+public Utilisateur updateUser(Utilisateur updatedUser) {
+    Utilisateur existingUser = utilisateurDao.findByEmail(updatedUser.getEmail());
+    if (existingUser != null) {
+        existingUser.setStoreName(updatedUser.getStoreName());
+        existingUser.setEmail(updatedUser.getEmail());
+        existingUser.setPassword(passwordEncoder.encode(updatedUser.getPassword()));
+        existingUser.setNomComplet(updatedUser.getNomComplet());
+        existingUser.setInfoCarteBancaire(updatedUser.getInfoCarteBancaire());
+        existingUser.setImage(updatedUser.getImage());
+        existingUser.setTelephone(updatedUser.getTelephone());
+        existingUser.setAdresse(updatedUser.getAdresse());
+        existingUser.setProduits(updatedUser.getProduits());
+        existingUser.setVendeur(updatedUser.isVendeur());
+        utilisateurDao.save(existingUser);
+        return existingUser;
     }
+    return null;
+}
 
 
-    public Utilisateur addStock(Utilisateur utilisateur) {
-        Utilisateur utilisateurAvecStock = utilisateurDao.findByEmail(utilisateur.getEmail());
-        if (utilisateurAvecStock != null) {
-            if (utilisateur.getStoreName() != null) {
-                utilisateurAvecStock.setStoreName(utilisateur.getStoreName());
-            }
-            if (utilisateur.getTelephone() != null) {
-                utilisateurAvecStock.setTelephone(utilisateur.getTelephone());
-            }
-            if (utilisateur.getAdresse() != null) {
-                utilisateurAvecStock.setAdresse(utilisateur.getAdresse());
-            }
-            if (utilisateur.isVendeur()) {
-                utilisateurAvecStock.setVendeur(true);
-            }
-            utilisateurDao.save(utilisateurAvecStock);
-            return utilisateurAvecStock;
-        }
-        return null;
+
+    public Utilisateur addStock( Utilisateur utilisateur) {
+    Utilisateur utilisateurAvecStock = utilisateurDao.findByEmail( utilisateur.getEmail());
+    if (utilisateurAvecStock != null ) {
+        utilisateurAvecStock.setStoreName(utilisateur.getStoreName());
+        utilisateurAvecStock.setTelephone(utilisateur.getTelephone());
+        utilisateurAvecStock.setAdresse(utilisateur.getAdresse());
+        utilisateurAvecStock.setVendeur(true);
+        utilisateurDao.save(utilisateurAvecStock);
+        return utilisateurAvecStock;
     }
-
-    public Utilisateur uploadImage(HttpServletRequest request, String email, MultipartFile file) throws IOException {
-        String baseUrl = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + "/uploaded-images/";
-        String filename = StringUtils.cleanPath(file.getOriginalFilename());
-
-        Path storageDirectory = Paths.get("D:\\ImagesTest"); // replace with your directory path
-        if (!Files.exists(storageDirectory)) {
-            Files.createDirectories(storageDirectory);
-        }
-
-        Path destinationPath = storageDirectory.resolve(Path.of(filename));
-        file.transferTo(destinationPath);
-
-        Utilisateur user = utilisateurDao.findByEmail(email);
-        if (user != null) {
-            user.setImage(baseUrl + filename);  // Save the URL instead of the path
-            utilisateurDao.save(user);
-        }
-        return user;
-    }
-    public Utilisateur getUserByEmail(String email) {
-        return utilisateurDao.findByEmail(email);
-    }
-
+    return null;
+}
 }
 
 

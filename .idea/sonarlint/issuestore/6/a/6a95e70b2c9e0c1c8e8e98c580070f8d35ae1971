@@ -1,9 +1,14 @@
 
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ŠŒÃäî1J$2c9429cd-fa4f-4104-bdfe-57fb6bcd9517
-~	java:S125"<This block of commented-out lines of code should be removed.(ª–Ú¸8µÉ–ï1J$8f5e7138-5ebf-4f14-8c3f-6c755d5437bc
-~	java:S125"<This block of commented-out lines of code should be removed.(ú¯»¦8œ–ï1J$71e35621-9020-4c56-8ed8-f5c83634561f
-
-java:S1128"ERemove this unused import 'com.example.ecomercebackend.bean.Produit'.(¥¥Óüÿÿÿÿ8¶É–ï1J$9c32cca0-3089-4819-8112-2865a180bf58
-s
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8œ–ï1J$33c77a7b-b442-4747-a2f0-eb1e27f2ff06
+b	java:S112#"FDefine and throw a dedicated exception instead of using a generic one.(’¯¬8‰Ï®‘ğ1
+g	java:S112<"FDefine and throw a dedicated exception instead of using a generic one.(³«çëüÿÿÿÿ8ŠÏ®‘ğ1
+g	java:S112D"FDefine and throw a dedicated exception instead of using a generic one.(ª¥—Üüÿÿÿÿ8‹Ï®‘ğ1
+g	java:S112G"FDefine and throw a dedicated exception instead of using a generic one.(·ê³Ûıÿÿÿÿ8‹Ï®‘ğ1
+b	java:S112O"FDefine and throw a dedicated exception instead of using a generic one.(ä³šŠ8Ï®‘ğ1
+m
+java:S1192<"KDefine a constant instead of duplicating this literal " not found" 3 times.(³«çëüÿÿÿÿ8’Ï®‘ğ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÏÏ®‘ğ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ĞÏ®‘ğ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ĞÏ®‘ğ1

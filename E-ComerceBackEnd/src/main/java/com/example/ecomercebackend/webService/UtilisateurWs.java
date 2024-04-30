@@ -2,13 +2,11 @@ package com.example.ecomercebackend.webService;
 
 import com.example.ecomercebackend.bean.Utilisateur;
 import com.example.ecomercebackend.service.UtilisateurService;
-import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
-import java.io.IOException;
 
+import java.util.List;
 
 
 @RestController
@@ -18,7 +16,10 @@ public class UtilisateurWs {
     @Autowired
     private UtilisateurService utilisateurService;
 
-
+    @GetMapping("/findAll")
+    public List<Utilisateur> findAll() {
+        return utilisateurService.findAll();
+    }
 
     @PostMapping("/")
     public Utilisateur addUser(@RequestBody Utilisateur utilisateur) {
@@ -50,11 +51,8 @@ public class UtilisateurWs {
         return utilisateurService.changePassword(token,password);
     }
 
-    @PostMapping("/matchEncoder/email/{email}/password/{password}")
 
-    public Utilisateur matchEncoder(String email, String password) {
-        return utilisateurService.matchEncoder(email, password);
-    }
+
 
     @PostMapping("/resetPassword/token/{token}")
 
@@ -71,18 +69,5 @@ public class UtilisateurWs {
     public Utilisateur addStock(@RequestBody Utilisateur utilisateur) {
         return utilisateurService.addStock(utilisateur);
     }
-
-    @PostMapping(value = "/uploadImage")
-    public Utilisateur uploadImage(HttpServletRequest request,
-                                   @RequestParam("email") String email,
-                                   @RequestParam("image") MultipartFile file) throws IOException {
-        return utilisateurService.uploadImage(request, email, file);
-    }
-    @GetMapping("/email/{email}")
-    public Utilisateur getUserByEmail(@PathVariable String email) {
-        return utilisateurService.getUserByEmail(email);
-    }
-
-
 }
 
