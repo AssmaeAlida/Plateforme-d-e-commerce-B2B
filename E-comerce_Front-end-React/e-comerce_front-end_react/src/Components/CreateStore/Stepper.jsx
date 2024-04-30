@@ -5,6 +5,7 @@ import { TiTick } from "react-icons/ti";
 import Finish from './Finish/Finish';
 import './stepper.css';
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Stepper = () => {
   const steps = ["Store name", "Store location" , "Finish"];
@@ -22,7 +23,34 @@ const Stepper = () => {
   const [address, setAddress] = useState('');
   const [addressError, setAddressError] = useState('');
   const navigate = useNavigate();
+  const email = sessionStorage.getItem('email');
 
+  const handleFinish = async () => {
+    try {
+      const data = {
+        email,
+        storeName,
+       telephone: phoneNumber,
+       adresse : address
+      };
+
+      console.log(data);
+      const response = await axios.post(
+        "http://localhost:8089/ecomerce-backend/Utilisateur/addStock",
+        data
+      );
+
+      if (response.status === 200) {
+        console.log("Data saved successfully");
+        setComplete(true);
+        navigate('/homeVend');
+      } else {
+        console.log("Failed to save data");
+      }
+    } catch (error) {
+      console.error("An error occurred while saving data:", error);
+    }
+  };
   
   return (
     <>
@@ -68,7 +96,6 @@ const Stepper = () => {
         {currentStep === 3 && <Finish />}
       </div>
       
-      
       </div>
       <div className="flex justify-between" style={{alignContent : "center" , alignItems : "center" , textAlign: "center" ,display : "flex" , justifyContent : "center" }}>
         {currentStep > 1 && (
@@ -95,9 +122,7 @@ const Stepper = () => {
               (currentStep !== 2 || isPhoneClicked)
             ) {
               if (currentStep === steps.length) {
-                setComplete(true);
-                navigate('/homeVend');
-                 // Add this line
+                handleFinish();
               } else {
                 setCurrentStep((prev) => prev + 1);
               }

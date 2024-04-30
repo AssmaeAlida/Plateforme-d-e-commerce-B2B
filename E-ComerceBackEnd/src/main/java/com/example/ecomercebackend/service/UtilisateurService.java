@@ -181,18 +181,26 @@ public Utilisateur changePassword(String token, String newPassword) {
     }
 
 
-    public Utilisateur addStock( Utilisateur utilisateur) {
-    Utilisateur utilisateurAvecStock = utilisateurDao.findByEmail( utilisateur.getEmail());
-    if (utilisateurAvecStock != null ) {
-        utilisateurAvecStock.setStoreName(utilisateur.getStoreName());
-        utilisateurAvecStock.setTelephone(utilisateur.getTelephone());
-        utilisateurAvecStock.setAdresse(utilisateur.getAdresse());
-        utilisateurAvecStock.setVendeur(true);
-        utilisateurDao.save(utilisateurAvecStock);
-        return utilisateurAvecStock;
+    public Utilisateur addStock(Utilisateur utilisateur) {
+        Utilisateur utilisateurAvecStock = utilisateurDao.findByEmail(utilisateur.getEmail());
+        if (utilisateurAvecStock != null) {
+            if (utilisateur.getStoreName() != null) {
+                utilisateurAvecStock.setStoreName(utilisateur.getStoreName());
+            }
+            if (utilisateur.getTelephone() != null) {
+                utilisateurAvecStock.setTelephone(utilisateur.getTelephone());
+            }
+            if (utilisateur.getAdresse() != null) {
+                utilisateurAvecStock.setAdresse(utilisateur.getAdresse());
+            }
+            if (utilisateur.isVendeur()) {
+                utilisateurAvecStock.setVendeur(true);
+            }
+            utilisateurDao.save(utilisateurAvecStock);
+            return utilisateurAvecStock;
+        }
+        return null;
     }
-    return null;
-}
 
     public Utilisateur uploadImage(String email, MultipartFile file) throws IOException {
         String baseUrl = "http://localhost:8080/uploaded-images/";
