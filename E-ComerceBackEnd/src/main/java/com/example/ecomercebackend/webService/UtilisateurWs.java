@@ -2,6 +2,7 @@ package com.example.ecomercebackend.webService;
 
 import com.example.ecomercebackend.bean.Utilisateur;
 import com.example.ecomercebackend.service.UtilisateurService;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
@@ -71,10 +72,17 @@ public class UtilisateurWs {
         return utilisateurService.addStock(utilisateur);
     }
 
-    @PostMapping(value = "/uploadImage", consumes = {"multipart/form-data"})
-    public Utilisateur uploadImage(@RequestParam("email") String email,
+    @PostMapping(value = "/uploadImage")
+    public Utilisateur uploadImage(HttpServletRequest request,
+                                   @RequestParam("email") String email,
                                    @RequestParam("image") MultipartFile file) throws IOException {
-        return utilisateurService.uploadImage(email, file);
+        return utilisateurService.uploadImage(request, email, file);
     }
+    @GetMapping("/email/{email}")
+    public Utilisateur getUserByEmail(@PathVariable String email) {
+        return utilisateurService.getUserByEmail(email);
+    }
+
+
 }
 

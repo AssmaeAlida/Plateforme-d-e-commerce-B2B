@@ -3,8 +3,10 @@ package com.example.ecomercebackend.service;
 import com.example.ecomercebackend.bean.Utilisateur;
 import com.example.ecomercebackend.dao.UtilisateurDao;
 import com.example.ecomercebackend.service.Mail.MailService;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import java.net.InetAddress;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -202,11 +204,11 @@ public Utilisateur changePassword(String token, String newPassword) {
         return null;
     }
 
-    public Utilisateur uploadImage(String email, MultipartFile file) throws IOException {
-        String baseUrl = "http://localhost:8080/uploaded-images/";
+    public Utilisateur uploadImage(HttpServletRequest request, String email, MultipartFile file) throws IOException {
+        String baseUrl = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + "/uploaded-images/";
         String filename = StringUtils.cleanPath(file.getOriginalFilename());
 
-        Path storageDirectory = Paths.get("path/to/your/directory"); // replace with your directory path
+        Path storageDirectory = Paths.get("D:\\ImagesTest"); // replace with your directory path
         if (!Files.exists(storageDirectory)) {
             Files.createDirectories(storageDirectory);
         }
@@ -220,6 +222,9 @@ public Utilisateur changePassword(String token, String newPassword) {
             utilisateurDao.save(user);
         }
         return user;
+    }
+    public Utilisateur getUserByEmail(String email) {
+        return utilisateurDao.findByEmail(email);
     }
 
 }
