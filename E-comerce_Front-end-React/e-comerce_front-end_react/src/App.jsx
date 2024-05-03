@@ -16,6 +16,8 @@ import Homevend from './Components/Home/HomeVend/HomeVend'
 import Profile from './Components/Profile/Profile'
 import MyStore from './Components/MyStore/MyStore'
 import PageAddProduct from './Components/PageAddProduct/PageAddProduct'
+import DashboardAdmin from './Components/InterfaceAdmin/DashboardAdmin/DashbordAdmin'
+import HomeAdmin from './Components/InterfaceAdmin/DashboardAdmin/HomeAdmin'
 
 function App() {
 
@@ -39,6 +41,9 @@ function App() {
         <Route path='/Profile' element={<Profile/>}></Route>
         <Route path='/MyStore' element={<MyStore/>}></Route>
         <Route path='/AddProduct' element={<PageAddProduct/>}></Route>
+        <Route path='/homeAdmin' element={<HomeAdmin/>}></Route>
+        
+        <Route path='/dashboard' element={<DashboardAdmin/>}></Route>
 
         
 

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './ListProduct.css'
-import { useNavigate } from 'react-router-dom';
 
 
 // Composant de la modale
@@ -29,13 +28,64 @@ function Modal({ isOpen, onClose, onConfirm }) {
     );
 }
 
+// Composant de la modal de modification
+function ModifyModal({ isOpen, onClose, onConfirm }) {
+    if (!isOpen) return null;
+
+    return (
+        <div className="modal-overlay">
+            <div className="modal1">
+                <div className="modal-content">
+                    <h2 className='QstDelete'>Modify Product</h2>
+                    {/* Ajoutez ici vos champs d'entrée pour la modification */}
+                    <div className='modifier-image'>  </div>
+                    <div className='titlesProduitModifier'>
+                        <div className='nameProductMofier1'>
+                        <label >Product name</label>
+
+                        </div>
+                        <input className='inputModifier' type="text" placeholder="Enter new product name" />
+
+                    </div>
+                     <div className='titlesProduitModifier'>
+                        <div className='nameProductMofier2'>
+                        <label> Product Category</label>
+
+                        </div>
+                       <input className='inputModifier' type="text" placeholder="Enter new product category" />
+
+                     </div>
+                        
+                      <div className='titlesProduitModifier'>
+
+                        <div  className='nameProductMofier4'>
+                        <label>Product Price</label>
+
+                        </div>
+                            <input className='inputModifier' type="number" placeholder="Enter new product price" />
+                    </div> 
+                    <div className='titlesProduitModifier'>
+                        <div className='nameProductMofier5'>
+                           <label>Product Description</label>
+                        </div>
+                    <input  className='inputModifier'  type="text" placeholder="Enter new product description" />
+
+                    </div>    
+
+
+                    {/* Ajoutez un bouton pour confirmer la modification */}
+                    <button className='btn-ModifierProduct' onClick={onConfirm}>Modify</button>
+                    <button className='cancel-popup1' onClick={onClose}>Cancel</button>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+
 function ListProduct({src , alt , nameProduct , QTe, pricee, dateDelancement }) {
 
-    const navigate = useNavigate();
-    function navigation(event){
-        event.preventDefault();
-        navigate("/AddProduct")
-    }
+   
     const [price, setPrice] = useState(0);
     const [isModalOpen, setModalOpen] = useState(false);
 
@@ -61,6 +111,24 @@ function ListProduct({src , alt , nameProduct , QTe, pricee, dateDelancement }) 
         setModalOpen(false);
     };
 
+    const [isModifyModalOpen, setModifyModalOpen] = useState(false);
+
+    // Fonction pour ouvrir la modal de modification
+    const handleOpenModifyModal = () => {
+        setModifyModalOpen(true);
+    };
+
+    // Fonction pour fermer la modal de modification
+    const handleCloseModifyModal = () => {
+        setModifyModalOpen(false);
+    };
+
+    // Fonction pour confirmer la modification
+    const handleConfirmModify = () => {
+        // Ajoutez ici la logique pour modifier l'élément
+        console.log("Item modified successfully!");
+        setModifyModalOpen(false);
+    };
     return (
         <>
         <div>
@@ -105,7 +173,7 @@ function ListProduct({src , alt , nameProduct , QTe, pricee, dateDelancement }) 
           <td className='ligneTable'>{pricee} $</td>
           <td className='ligneTable'>{dateDelancement}</td>
           <td >
-            <div onClick={navigation}  className='icon-modifier'>
+            <div className='icon-modifier' onClick={handleOpenModifyModal}>
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
               <path d="M14.9069 0H6.10354C2.27964 0 0 2.2785 0 6.1005V14.889C0 18.7215 2.27964 21 6.10354 21H14.8964C18.7203 21 21 18.7215 21 14.8995V6.1005C21.0105 2.2785 18.7308 0 14.9069 0ZM9.40219 16.2855C9.09753 16.59 8.51975 16.884 8.09954 16.947L5.51525 17.3145C5.4207 17.325 5.32615 17.3355 5.23161 17.3355C4.80089 17.3355 4.40169 17.1885 4.11805 16.905C3.77138 16.5585 3.62431 16.0545 3.70835 15.498L4.07603 12.915C4.13906 12.4845 4.4227 11.9175 4.73786 11.613L9.4232 6.93C9.59015 7.40033 9.8012 7.85385 10.0535 8.2845C10.1586 8.463 10.2741 8.631 10.3687 8.757C10.4842 8.9355 10.6208 9.1035 10.7048 9.198C10.7574 9.2715 10.7994 9.324 10.8204 9.345C11.083 9.66 11.3877 9.954 11.6503 10.1745C11.7238 10.248 11.7659 10.29 11.7869 10.3005C11.9445 10.4265 12.102 10.5525 12.2386 10.647C12.4067 10.773 12.5748 10.8885 12.7534 10.983C12.9635 11.109 13.1946 11.2245 13.4257 11.34C13.6673 11.445 13.8879 11.5395 14.1085 11.613L9.40219 16.2855ZM16.1465 9.5445L15.1801 10.521C15.1497 10.5512 15.1136 10.5751 15.0739 10.5913C15.0343 10.6075 14.9918 10.6157 14.9489 10.6155C14.9174 10.6155 14.8754 10.6155 14.8544 10.605C13.7991 10.2992 12.8383 9.73169 12.0614 8.95514C11.2844 8.1786 10.7166 7.21828 10.4107 6.1635C10.3792 6.048 10.4107 5.922 10.4947 5.8485L11.4717 4.872C13.0685 3.276 14.5918 3.3075 16.1571 4.872C16.9554 5.67 17.3441 6.4365 17.3441 7.2345C17.3336 7.9905 16.9449 8.7465 16.1465 9.5445Z" fill="#FD6C6B"/>
             </svg>
@@ -126,6 +194,12 @@ function ListProduct({src , alt , nameProduct , QTe, pricee, dateDelancement }) 
                 isOpen={isModalOpen}
                 onClose={handleCloseModal}
                 onConfirm={handleConfirmDelete}
+            />
+             {/* Modale de modification */}
+             <ModifyModal
+                isOpen={isModifyModalOpen}
+                onClose={handleCloseModifyModal}
+                onConfirm={handleConfirmModify}
             />
         </>
     );
