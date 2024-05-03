@@ -42,7 +42,6 @@ function ModifyModal({ isOpen, onClose, onConfirm }) {
                     <div className='titlesProduitModifier'>
                         <div className='nameProductMofier1'>
                         <label >Product name</label>
-
                         </div>
                         <input className='inputModifier' type="text" placeholder="Enter new product name" />
 
@@ -50,26 +49,20 @@ function ModifyModal({ isOpen, onClose, onConfirm }) {
                      <div className='titlesProduitModifier'>
                         <div className='nameProductMofier2'>
                         <label> Product Category</label>
-
                         </div>
-                       <input className='inputModifier' type="text" placeholder="Enter new product category" />
-
-                     </div>
-                        
-                      <div className='titlesProduitModifier'>
-
+                          <input className='inputModifier' type="text" placeholder="Enter new product category" />
+                    </div>                     
+                     <div className='titlesProduitModifier'>
                         <div  className='nameProductMofier4'>
                         <label>Product Price</label>
-
                         </div>
                             <input className='inputModifier' type="number" placeholder="Enter new product price" />
-                    </div> 
+                         </div> 
                     <div className='titlesProduitModifier'>
                         <div className='nameProductMofier5'>
                            <label>Product Description</label>
                         </div>
                     <input  className='inputModifier'  type="text" placeholder="Enter new product description" />
-
                     </div>    
 
 
