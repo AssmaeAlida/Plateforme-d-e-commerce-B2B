@@ -6,13 +6,13 @@ import './../Home.css'
 import CardProduct from '../CardProduct/CardProduct'
 import Newsletter from '../Newsletter/Newsletter'
 import Footer from '../Footer/Footer'
-import NavBarVend from '../NavBar/NavBarVend'
+import NavBar from '../NavBar/NavBarVend'
 function HomeVend() {
 
   return (
     <>
     <div className='body'>
-    <NavBarVend   src='./images/ellipse-31.png' alt='image profile'/>
+    <NavBar   src='./images/ellipse-31.png' alt='image profile'/>
     <Pagination/>
     <Categories/>
     <CardArticle/>

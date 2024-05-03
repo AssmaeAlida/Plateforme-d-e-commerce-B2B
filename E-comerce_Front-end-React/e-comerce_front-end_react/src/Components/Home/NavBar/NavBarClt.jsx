@@ -3,7 +3,7 @@ import Logo from "./Logo/Logo";
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-export default function NavBar({src , alt}) {
+export default function NavBarClt({src , alt}) {
 
     const navigate = useNavigate();
     function navigation1(event){
