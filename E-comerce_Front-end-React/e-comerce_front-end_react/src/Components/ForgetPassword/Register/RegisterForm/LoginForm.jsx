@@ -1,5 +1,5 @@
 import "./LoginForm.css";
-import { useState } from "react";
+import { useState , useEffect } from "react";
 import RegisterTitle from "./RegisterTitle/RegisterTitle";
 import Textfield from "./Textfield/Textfield";
 import SignUp from "./SignUp/SignUp";
@@ -10,6 +10,11 @@ export default function LoginForm() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
+    sessionStorage.setItem('email', email);
+    sessionStorage.setItem('password', password);
+
+    // Retrieve email from sessionStorage
+    
 
     const navigate = useNavigate();
     const handleLogin = async (event) => {
@@ -49,7 +54,7 @@ export default function LoginForm() {
                 <form onSubmit={handleLogin}>
                     <RegisterTitle title="Login"/>
                     <Textfield title="Email Address" icon={<Icon1 />} text="Enter Your Email" type="email" value={email} onChange={(event) => setEmail(event.target.value)} />
-                    <Textfield title="Password" icon={<Icon2 />} text="Enter Your Password" type="password" value={password} onChange={(event) => setPassword(event.target.value)} />
+                    <Textfield title="Password" icon={<Icon2 />} text="Enter Your Password" type="text" value={password} onChange={(event) => setPassword(event.target.value)} />
                     {errorMessage && <div className="error-message">{errorMessage}</div>}
                     <div className="flex">
                         <div className="checkbox">

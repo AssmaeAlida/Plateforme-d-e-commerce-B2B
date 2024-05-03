@@ -1,21 +1,60 @@
 import "./LoginAdmin.css"
 import PartPage from "./PartPage/PartPage"
-
+import axios from 'axios';
 import TextField from './TextField/TextField1'
-
+import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 import 'typeface-inter';
 
 export default function LoginAdmin(){
+  
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
+
+    const navigate = useNavigate();
+
+    const handleAdminLogin = async (event) => {
+      event.preventDefault(); // Prevent form submission
+  
+      try {
+          const response = await axios.post(`http://localhost:8089/ecomerce-backend/Administarteur/signIn/email/${email}/password/${password}`);
+  
+          if (response.data) {
+            console.log(response.data);
+              navigate('/');
+              setErrorMessage("")
+              // User exists, you can proceed with further actions (e.g., redirect to another page)
+          } else {
+              setErrorMessage('Please verify your email and password');
+
+              // User does not exist, you can show an error message or take appropriate action
+          }
+
+      } catch (error) {
+        setErrorMessage('Please enter youre email and password correctly');
+        // Handle API call errors, such as network issues or server errors
+      }
+  };
+
     return(
         <>
         <PartPage></PartPage>
         <div className="SignIn-Form1">
            
             <h4 className="Title1">Admin Login</h4>
-            <TextField icon={<Icon1 />}  title=" UserName" name="name"  text="Your name here..." type="name" />
-            <TextField icon={<Icon2 />}  title="Password" name="password"  text="Your password here..." type="password" />
-            <button className="btn-SignIn1">Sign In</button>
+            <form onSubmit={handleAdminLogin}>
+            <TextField icon={<Icon1 />}  title=" UserName" name="name"  text="Your name here..." type="name" onChange={(event) => setEmail(event.target.value)} />
+            <TextField icon={<Icon2 />}  title="Password" name="password"  text="Your password here..." type="password" onChange={(event) => setPassword(event.target.value)} />
+            <div style={{paddingLeft :"30px", paddingTop :"20px", color:"red"}}>
+            {errorMessage && <p className="errorMessage">{errorMessage}</p>}
+            </div>
+
+            <button className="btn-SignIn1" style={{cursor : "pointer"}} type="submit">Sign In</button>
+
+            </form>
+            
         </div>
         </>
     );
