@@ -17,7 +17,10 @@ import MyStore from './Components/MyStore/MyStore'
 import PageAddProduct from './Components/PageAddProduct/PageAddProduct'
 import DashboardAdmin from './Components/InterfaceAdmin/DashboardAdmin/DashbordAdmin'
 import HomeAdmin from './Components/InterfaceAdmin/DashboardAdmin/HomeAdmin'
-
+import Tables from './Components/InterfaceAdmin/DashboardAdmin/CategoriesAdmin/Tables'
+import CategoriesAdmin from './Components/InterfaceAdmin/DashboardAdmin/CategoriesAdmin/CategoriesAdmin'
+import Admins from './Components/InterfaceAdmin/DashboardAdmin/Admins/Admins'
+import ViewProduct from './Components/InterfaceAdmin/DashboardAdmin/ViewProducts/ViewProduct'
 function App() {
 
   return (
@@ -35,13 +38,14 @@ function App() {
 
         <Route path='/createStore' element={<Steeper/>}></Route>
 
-        <Route path='/home' element={<HomeClt/>}></Route>
         <Route path='/homeVend' element={<Homevend/>}></Route>
         <Route path='/Profile' element={<Profile/>}></Route>
         <Route path='/MyStore' element={<MyStore/>}></Route>
         <Route path='/AddProduct' element={<PageAddProduct/>}></Route>
-        <Route path='/homeAdmin' element={<HomeAdmin/>}></Route>
-        
+        <Route path='/categories' element={<CategoriesAdmin/>}></Route>
+        <Route path='/admins' element={<Admins/>}></Route>
+        <Route path='/productsAdmin' element={<ViewProduct/>}></Route>
+
         <Route path='/dashboard' element={<DashboardAdmin/>}></Route>
 
         

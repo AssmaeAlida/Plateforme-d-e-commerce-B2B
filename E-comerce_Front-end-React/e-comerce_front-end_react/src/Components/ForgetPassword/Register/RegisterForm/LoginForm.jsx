@@ -24,7 +24,7 @@ export default function LoginForm() {
             const response = await axios.post(`http://localhost:8089/ecomerce-backend/Utilisateur/signIn/email/${email}/password/${password}`);
     
             if (response.data) {
-                navigate('/home');
+                navigate('/');
                 console.log("User exists");
                 // User exists, you can proceed with further actions (e.g., redirect to another page)
             } else {

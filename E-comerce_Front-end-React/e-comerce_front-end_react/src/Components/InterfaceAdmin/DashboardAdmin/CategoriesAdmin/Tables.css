@@ -1,0 +1,221 @@
+.btnAddCategorie{
+    background-color: #FF5722;
+    border: #FF5722;
+    height: 56px;
+    width: 175px;
+    border-radius: 17px;
+    margin-left: 78%;
+    color: white;
+    font-family: Inter;
+    font-size: 15.55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+.TableCategories{
+    padding-bottom: 50px;
+    margin-left: 18%;
+    margin-top: 70px;
+    width: 707px;
+    height: 177px;
+    box-shadow: 0px 1px 4px 0px rgb(233 228 228 / 46%);
+
+}
+.AttibutCategory {
+    /* margin-left: 42px; */
+    padding-left: 78px;
+}
+.Attibut{
+    padding-top: 33px;
+    padding-bottom: 37px;
+    padding-left: 53px;
+}
+/* Pour popup create */
+.Create-title {
+    margin-top: 14px;
+    margin-left: 41px;
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 15.55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.input-create{
+    width: 437px;
+    height: 45.71px;
+    background: #F5F5F5;
+    border: #9A9A9A;
+    color: #9A9A9A;
+    border-radius: 10px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 30px;
+    margin-left: 34px;
+    margin-top: 9px;
+}
+.modal111 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 278px;
+    width: 543px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 35px;
+}
+.PlusImage{
+    color: #FF5722;
+    height: 100px;
+    width: 100px;
+}
+
+.btn-modaleCreate{
+    border-radius: 10px;
+    background: #FF5722;
+    width: 143px;
+    height: 47px;
+    transform: rotate(0.064deg);
+    flex-shrink: 0;
+    border: #FF5722;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18.55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 97px;
+    display: flex;
+    margin-top: 27px;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.Add-imageCreate{
+    border-radius: 50px;
+    margin-left: 223px;
+    margin-top: 0px;
+    height: 62px;
+    width: 71px;
+    background: rgba(255, 87, 34, 0.10);
+
+}
+.titleModalCreate2{
+    margin-left: 116px;
+    color: rgb(94 88 88);
+    font-family: Inter;
+    font-size: 14.55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.titleModalCreate{
+    margin-left: 178px;
+
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 20.55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.btn-modaleClose{
+    border-radius: 10px;
+    border: 1px solid #FF5722;
+    background: #FFF;
+    width: 143px;
+    height: 47px;
+    transform: rotate(0.064deg);
+    flex-shrink: 0;
+    color: #FF5722;
+    font-family: Inter;
+    font-size: 18.55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 287px;
+    margin-top: -48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Add-imageCreate a{
+    color: #FF5722;
+    font-family: Inter;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    margin-left: 22px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+
+}
+.icon-AlterDelete {
+    padding-bottom: 14px;
+    margin-left: 215px;
+    /* height: 29px; */
+}
+.btn-modaleClose2{
+    border-radius: 10px;
+    border: 1px solid #FF5722;
+    background: #FFF;
+    width: 143px;
+    height: 47px;
+    transform: rotate(0.064deg);
+    flex-shrink: 0;
+    color: #FF5722;
+    font-family: Inter;
+    font-size: 18.55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 355px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.modal111 p{
+    width: 437px;
+    height: 27.71px;
+    background: #F5F5F5;
+    border: #9A9A9A;
+    color: #9A9A9A;
+    border-radius: 10px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 30px;
+    margin-left: 34px;
+    margin-top: 11px;
+    padding-top: 11px;
+
+
+}
+
+/*produccccccccccts*/
+.Tableproductss{
+    padding-bottom: 50px;
+    margin-left: 15%;
+    margin-top: 70px;
+    width: 841px;
+    height: 177px;
+    box-shadow: 0px 1px 4px 0px rgb(233 228 228 / 46%);
+
+}

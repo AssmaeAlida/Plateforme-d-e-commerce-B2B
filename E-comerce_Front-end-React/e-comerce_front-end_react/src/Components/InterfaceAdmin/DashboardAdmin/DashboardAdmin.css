@@ -168,6 +168,11 @@ line-height: normal;
   .main-title {
     display: flex;
     justify-content: space-between;
+    margin-left: 40px;
+ 
+    font-family: Inter;
+    font-size: 18.55px;
+
   }
   
   .main-cards {
@@ -245,6 +250,19 @@ line-height: normal;
       display: inline;
     }
   }
+
+  /* Styles généraux de la barre latérale */
+.sidebar-list-item {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Styles pour l'élément actuellement sélectionné */
+.sidebar-list-item.active {
+  background-color: #f0f0f0; /* Couleur de fond */
+  color: #333; /* Couleur du texte */
+}
+
   /* Small <= 768px */
     
   @media screen and (max-width: 768px) {
