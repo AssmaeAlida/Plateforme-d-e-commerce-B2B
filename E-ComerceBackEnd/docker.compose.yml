@@ -1,0 +1,41 @@
+version: "3.4"
+
+services:
+
+  # Database
+  mysql-db:
+    image: mysql
+    container_name: mysql-db
+    hostname: mysql-db
+    restart: always
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+      MYSQL_DATABASE: 'ecoomerceV2'
+      MYSQL_USER: ''
+      MYSQL_PASSWORD: ''
+      MYSQL_ROOT_PASSWORD: ''
+    ports:
+      - "3306:3306"
+    expose:
+      - "3306"
+    volumes:
+      - db-volume:/var/lib/mysql
+
+
+  #BackEnd Spring
+  e-commerce-back-end:
+    build:
+      context: ./
+      args:
+        JAR_FILE: E-ComerceBackEnd-0.0.1-SNAPSHOT.jar
+      dockerfile: Dockerfile
+    image: e-commerce-back-end
+    container_name: e-commerce-back-end
+    hostname: e-commerce-back-end
+    ports:
+      - "8089:8089"
+
+    environment:
+      - SERVER_PORT=8089
+volumes:
+  db-volume:
