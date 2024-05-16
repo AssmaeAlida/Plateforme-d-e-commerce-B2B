@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: e-commerce-app-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: e-commerce-app
+  template:
+    metadata:
+      labels:
+        app: e-commerce-app
+    spec:
+      containers:
+      - name: e-commerce-app
+        image: sarahbelaarabi10/e-commerce-app:latest
+        imagePullPolicy: IfNotPresent
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 3000 # Mise à jour du port ici
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: e-commerce-app-service
+spec:
+  type: NodePort
+  selector:
+    app: e-commerce-app
+  ports:
+    - port: 5173
+      protocol: TCP
+      targetPort: 3000 # Mise à jour du port ici
+      nodePort: 32000

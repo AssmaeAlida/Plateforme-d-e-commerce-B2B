@@ -25,7 +25,7 @@ services:
   #BackEnd Spring
   e-commerce-back-end:
     build:
-      context: ./
+      context: ../../../Users/HP/Downloads/ClonedProject/ClonedProject/projet-dev-2324-g7-iir42324c7g6/E-ComerceBackEnd
       args:
         JAR_FILE: E-ComerceBackEnd-0.0.1-SNAPSHOT.jar
       dockerfile: Dockerfile
