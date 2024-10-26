@@ -18,6 +18,9 @@ import DashboardAdmin from './Components/InterfaceAdmin/DashboardAdmin/DashbordA
 import CategoriesAdmin from './Components/InterfaceAdmin/DashboardAdmin/CategoriesAdmin/CategoriesAdmin'
 import Admins from './Components/InterfaceAdmin/DashboardAdmin/Admins/Admins'
 import ViewProduct from './Components/InterfaceAdmin/DashboardAdmin/ViewProducts/ViewProduct'
+import DescriptionProduit from './Components/DescriptionProduit/DescriptionProduit'
+import Cart from './Components/Cart/Cart'
+import CheckOut from './Components/CheckOut/CheckOut'
 function App() {
 
   return (
@@ -45,8 +48,9 @@ function App() {
 
         <Route path='/dashboard' element={<DashboardAdmin/>}></Route>
 
-        
-
+        <Route path='/description' element={<DescriptionProduit/>}></Route>
+        <Route path='/cart' element={<Cart/>}></Route>
+        <Route path='/CheckOut' element={<CheckOut/>}></Route>
       </Routes>
       
       </BrowserRouter>

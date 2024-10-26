@@ -1,0 +1,186 @@
+.image_DecProduct{
+    margin-top: 37px;
+    margin-left: 228px;
+    display: flex;
+    width: 498px;
+    padding: 154px 27px 131px 27px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 30px;
+    width: 541px;
+    height: 216px;
+    background-color: #c4c1c136;
+
+}
+.NameProdDesc{
+    color: var(--Text2, #000);
+font-family: Inter;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 75% */
+letter-spacing: 0.96px;
+}
+.SatatusProduct{
+    color: #4CAF50;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 21px; /* 150% */
+opacity: 0.6;
+}
+.Desc{
+    color: #808080;
+
+    /* Title/14PX Regular */
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px; /* 150% */
+    width: 373px;
+}
+.quantity {
+    margin-top: 45px;
+    display: flex;
+}
+
+.minus-btn,
+.plus-btn {
+    border-radius: 4px;
+
+    padding: 10px;
+    width: 30px;
+    background-color: #ffffff;
+}
+
+.minus-btn {
+    background-color: #f5e6e1;
+    border-right: 1px solid #bbbbbb;
+}
+
+.plus-btn {
+    border-left: 1px solid #bbbbbb;
+    color: white;
+    background-color: #FF5722; 
+}
+
+input[type=text] {
+    width: 39px;
+/*   border-right-style:hidden; */
+   border-left-style:hidden; 
+   outline:none; 
+   padding-left: 28px;
+}
+
+.Button_BuyNow{
+      /* display: inline-flex; */
+      padding: 10px 48px;
+      justify-content: center;
+      align-items: center;
+      /* gap: 10px; */
+      border-radius: 10px;
+      background: #FF5722;
+      color: var(--Text, #FAFAFA);
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+      margin-left: 161px;
+      margin-top: -40px;
+      display: flex;
+      height: 21px;
+      width: 94px;
+}
+.icooooon-retour{
+    margin-top: 39px;
+    margin-left: 94px;
+
+}
+.Description{
+    margin-top: -492px;
+    margin-left: 917px;
+}
+.iconDelivery{
+ margin-top: 40px;
+}
+.ReturnDelivery{
+
+}
+.freeDilivery h3 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    margin-top: -46px;
+    margin-left: 63px;
+}
+.freeDilivery h6 {
+    color: #808080;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+    text-decoration-line: underline;
+    margin-left: 63px;
+    margin-top: -15px;
+}
+.hr-container {
+    text-align: center;
+    width: 416px;
+  }
+  
+.hr-container hr {
+    margin: 0 auto; /* Pour centrer horizontalement */
+  }
+.CartTotal{
+    width: 470px;
+    height: 324px;
+    border-radius: 4px;
+    border: 1.5px solid #000;
+}
+.CartTotal p{
+    color: var(--Text2, #000);
+
+/* Title/20PX Medium */
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; /* 140% */
+margin-top: 39px;
+margin-left: 46px;
+}
+.CartTotal h4{
+    color: var(--Text2, #000);
+
+/* Title/16PX Regular */
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+margin-top: 39px;
+margin-left: 46px;
+}
+.CartTotal h3{
+    color: var(--Text2, #000);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 355px;
+    margin-top: -47px;
+
+}
+.hr-container2{
+    text-align: center;
+    width: 416px;
+}
